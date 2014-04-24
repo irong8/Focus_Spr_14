@@ -1,0 +1,33 @@
+/* TEAM */
+	Designer: Pete Schaffner
+	Contact: pete [at] irongatecreative.com
+	Twitter: @peteschaffner
+
+	Front/back-end developer: Pete again
+	
+	Programming consult/mentor: Dustin Carpenter
+	Contact: dustin [at] irongatecreative.com
+	Twitter: @dustincar
+	From: Muncie, Indiana USA
+
+	Programming mentor: Shaun Lieberman
+	Contact: shaun [at] irongatecreative.com
+	Twitter: @shaunlieberman
+
+	Creative director: Jeff Huffine
+	Contact: jeffh [at] irongatecreative.com
+	Twitter: @jeffhuffine
+	
+	Aesthetics master: Jeff Richards
+	Contact: jeffr [at] irongatecreative.com
+	Twitter: @freedoniajeff
+
+	
+	IronGate Creative
+	Hagerstown, Indiana USA
+
+/* SITE */
+	Last update: 2011/08/25
+	Language: English
+	Doctype: HTML5
+	Software: Espresso, Gitbox, Sequel Pro, Transmit, Kaleidoscope, xScope

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Lumina Foundation Focus</title>
+	<link href="/"/>
+	<updated>2003-12-13T18:30:02Z</updated>
+	<author>
+		<name>Lumina Foundation for Education</name>
+	</author>
+	<id>http://focus.luminafoundation.org/</id>
+	
+	<entry>
+		<title>Winter 2011: Discerning learning</title>
+		<link rel="alternate" href="/winter2011"/>
+		<id>http://focus.luminafoundation.org/winter2011</id>
+		<updated>2011-02-04</updated>
+		<author>
+			<name>Susan Headden</name>
+			<uri>http://www.educationsector.org/person/susan-headden</uri>
+		</author>
+		<summary>Colleges find new ways to show what students know.</summary>
+		<content>
+			Layla Quinones, a bright, vivacious 19-year-old, has an unusually impressive Web page. She has posted an attractive photograph of herself, an engaging biography, and a personal statement about her passions and interests. She's included a page of modern artwork that she likes, with insightful observations about each piece. She has the requisite headers and links. Yet there are elements noticeably missing from this page. There are no photos of her family, no shots of herself mugging for the camera, no "friending" requests from hopeful correspondents. That's because this is not Quinones' Facebook page; it's her academic portfolio – a cross section of the work she has done, and an assessment of what she has learned, as an education and physics major at LaGuardia Community College in New York City.
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Spring 2011: Un nuevo día</title>
+		<link rel="alternate" href="/spring2011"/>
+		<id>http://focus.luminafoundation.org/spring2011</id>
+		<updated>2011-05-16</updated>
+		<author>
+			<name>Patricia L. Brennan</name>
+		</author>
+		<summary>As Latino population grows, so must college attainment</summary>
+		<content>
+			José Ibarra, 19, spent his summers working alongside his parents and grandmother in a poultry-processing plant in Dalton, Ga. It was “horrendous, back-breaking work,” Ibarra says, but he needed the money to pay for college. Ibarra is now a freshman at Georgia College in Milledgeville. When Latino high school students visit GC’s campus, he takes it upon himself to show them the ropes.
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Summer 2011: Flexing the faculty</title>
+		<link rel="alternate" href="/summer2011"/>
+		<id>http://focus.luminafoundation.org/summer2011</id>
+		<updated>2011-08-25</updated>
+		<author>
+			<name>Steve Giegerich</name>
+		</author>
+		<summary>When these few educate 60,000, productivity rules</summary>
+		<content>
+			The question sounds like a thought experiment — one of those tricky, theoretical exercises designed to prompt discussion at some academic seminar:
+			
+			“Armed this year with $110 billion less than they expected, how can the nation’s public colleges and universities possibly increase the numbers of high-quality graduates that the nation so desperately needs?”
+		</content>
+	</entry>
+	
+	<entry>
+		<title>Winter 2012: A new lens for learning</title>
+		<link rel="alternate" href="/winter2012"/>
+		<id>http://focus.luminafoundation.org/winter2012</id>
+		<updated>2012-01-09</updated>
+		<author>
+			<name>Susan Headden</name>
+		</author>
+		<summary>'DQP' has promise as a tool to ensure degrees' quality</summary>
+		<content>“How do they study?” A visitor to Southern California’s Marymount College can’t help but ponder that question while climbing the steep switchbacks toward the tiny hilltop campus with its jaw-dropping views of the Pacific.</content>
+	</entry>
+	
+	<entry>
+		<title>Summer 2012: College, rewired</title>
+		<link rel="alternate" href="/summer2012"/>
+		<id>http://focus.luminafoundation.org/summer2012</id>
+		<updated>2012-06-29</updated>
+		<author>
+			<name>Steve Giegerich</name>
+		</author>
+		<summary>Innovative approaches help higher education connect to productivity</summary>
+		<content>In a three-decade career as an educator — a career that began at the front of a sixth-grade class and has since reached the administrative offices of the City University of New York — John Mogulescu has seen dozens of educational reforms come and go. It matters, then, when he singles out one effort as “the best thing we’ve ever done.”</content>
+	</entry>
+
+</feed>

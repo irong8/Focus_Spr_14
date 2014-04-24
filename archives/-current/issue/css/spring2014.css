@@ -1,0 +1,214 @@
+/*
+COLORS
+
+red: #be4340
+navy: #223056
+yellow: #bb9f55
+tan: #e4d9bb
+---------------------------------------- */
+
+a, #tttop, #footer a:hover {
+  color: #cc6866;
+}
+
+a:hover, h2, h5, #index a:hover, #index .condensed a:hover, #index .active, #index .condensed .active {
+  color: #223056;
+}
+
+#masthead, body, .noscript, #footer, .story-end, .figure img, iframe, .thumb {
+  background-color: #be4340;
+}
+
+cite, h3, h4, .pullquote {
+  font-style: normal;
+}
+
+h3, h4 {
+  font-family: Stencil, 'Stencil Std', sans-serif;
+  text-transform: uppercase;
+}
+
+h3, .drop-cap { color: #be4340; }
+
+.title {
+  color: #223056;
+  line-height: 1em;
+  text-align: left;
+}
+
+h4 {
+  color: #223056;
+  padding-top: 2em;
+}
+
+.aside {
+  background-color: #eee;
+}
+
+.citation {
+  border-color: #a48b4a;
+}
+
+.pullquote {
+  background-color: #bb9f55;
+  color: white;
+}
+
+.low-light .citation {
+  border-color: #3b3b3b;
+}
+
+.story-end {
+  background: #43685A;
+}
+
+#footer, .noscript, #footer #details, #footer ul li {
+  border-color: #9C3734;
+}
+
+#footer {
+  color: #732726;
+  text-shadow: 0 1px 0 #c65553;
+}
+
+.external-link {
+  background: transparent url(../images/external-link.png) no-repeat right center;
+}
+
+.extra-story {
+  background-color:#eee;
+  padding:25px;
+  margin-bottom:3em;
+}
+
+.low-light .extra-story {
+  background-color:#444;
+}
+
+.inside, .extras {
+  list-style: none;
+}
+
+.carousel {
+  position: relative;
+  left: -20px;
+  padding: 1px 20px;
+  margin: 2em 0 3em;
+  background: #f5f5f5;
+}
+
+.carousel .figure-audio {
+  margin: 0;
+}
+
+.carousel .caption {
+  text-align: center;
+  padding-right: 0;
+}
+
+.carousel, #carousel, #carousel .viewport, #carousel .overview li {
+  width: 580px;
+  overflow: hidden;
+}
+
+#carousel .viewport, #carousel .overview li {
+  height: 435px;
+}
+
+#carousel {
+  position: relative;
+  height: 470px;
+  margin: 2em 0;
+}
+
+#carousel .viewport { float: left; position: relative; }
+#carousel .buttons {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 84px;
+  width: 41px;
+  background-color: rgba(0, 0, 0, .2);
+  background-image: url(../images/arrows.png);
+  background-position: 9px center;
+  background-repeat: no-repeat;
+  border: none;
+  text-indent: -999em;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+#carousel .buttons:hover {
+  opacity: 1;
+}
+
+#carousel .next {
+  left: inherit;
+  background-position: -51px center;
+  right: 0;
+}
+#carousel .disable { visibility: hidden; }
+#carousel .overview {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#carousel .overview li {
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+#carousel .pager {
+  list-style: none;
+  clear: both;
+  margin: 0;
+  padding-top: .5em;
+  text-align: center;
+}
+
+#carousel .pager li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0;
+  border: none;
+}
+
+#carousel .pager li, #carousel .pagenum {
+  width: 15px;
+  height: 15px;
+}
+
+#carousel .pagenum {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  border: 2px solid #eee;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#carousel .active {
+  background-color: #be4340;
+  border-color: white;
+}
+
+#carousel .audiojs {
+  height: 20px;
+}
+
+#cover div {
+  top: auto;
+  bottom: 202px;
+}
+
+.byline {
+  border: none;
+  padding: 0 0 1.5em 0;
+  margin-bottom: 1.5em;
+}
