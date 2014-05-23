@@ -1,28 +1,22 @@
 <?php
   $issueName = 'Spring 2014';
-  $footerDate = 'May 2013';
+  $issueNum = '22';
+  $footerDate = 'May 2014';
   $assistants = 'Ruth Holladay and Lucia Anderson Weathers';
   $author = 'John Pulley';
   include($_SERVER['DOCUMENT_ROOT'].'/core/includes/header.php');
 ?>
 
       <ol class="extras visuallyhidden">
-        <li class="first"><a href="#portrait-gallery">Portrait gallery</a></li>
-        <li><a href="/archives/spring2013/vet-help.php" class="external-link">Can vets get too much help?</a></li>
-        <li><a href="/archives/spring2013/community-college-adjusts.php" class="external-link">Community college adjusts</a></li>
-        <li class="last"><a href="#10">A list of helpful links</a></li>
+        <li class="first"><a href="#inside-imentor">Inside iMentor</a></li>
+        <li><a href="/archives/<?php echo $dirName ?>/changed-lives.php">Changed lives</a></li>
+        <li class="last"><a href="#extras">A list of helpful links</a></li>
       </ol>
       <ol class="inside">
         <li class="first"><a href="#president-message">President&rsquo;s message</a></li>
-        <li><a href="#1">The new front</a></li>
-        <li><a href="#2">‘I didn’t like college kids’</a></li>
-        <li><a href="#3">Veterans center is crucial</a></li>
-        <li><a href="#4">‘Friendlies’ dot the campus</a></li>
-        <li><a href="#5">Vets helping vets</a></li>
-        <li><a href="#6">Program a boon to enrollment</a></li>
-        <li><a href="#7">Community college challenges</a></li>
-        <li><a href="#8">The benefits puzzle</a></li>
-        <li class="last"><a href="#9">From bombs to books</a></li>
+        <li><a href="#1">The iMentor program</a></li>
+        <li><a href="#2">The College Advising Corps</a></li>
+        <li class="last"><a href="#3">College MAP</a></li>
       </ol>
       <?php include($_SERVER['DOCUMENT_ROOT'].'/core/includes/index_toolbar.php'); ?>
     </div>
@@ -35,553 +29,337 @@
 
           <div id="cover" class="cover-small">
             <div>
-              <p class="sans"><?php echo $issueName ?> | issn: 21</p>
-              <h2>Friendly Forces</h2>
-              <p>Returning veterans<br>need staunch allies<br>on college campuses</p>
+              <p class="sans"><?php echo $issueName ?> | issn: <?php echo $issueNum ?></p>
+              <h2>Two-way street</h2>
+              <p>When college mentors<br>help students achieve,<br>success is shared</p>
             </div>
             <a href="#">i</a>
-            <p class="sans hidden">John Vasquez, a 20-year Navy veteran who suffers from post-traumatic stress disorder, has struggled in making the transition to student life at El Paso Community College. “Every day I get up and fight my anxieties,” he says.</p>
+            <p class="sans hidden">Walter Maya, a tax accountant with Ernst & Young (EY), counsels Olga Estephanie Menjivar Garcia, a student at Northeastern University in Boston. As a mentor in EY’s College MAP (Mentoring for Access and Persistence) program, Maya draws on his own admittedly “bumpy” experience as a first-generation college student.</p>
             <img src="<?php autoVer('/archives/'.$dirName.'/issue/images/cover.jpg'); ?>" alt="John Vasquez, a 20-year Navy veteran who suffers from post-traumatic stress disorder, has struggled in making the transition to student life at El Paso Community College. “Every day I get up and fight my anxieties,” he says." />
           </div>
 
-          <div class="section" id="president-message">
+          <div class="section stripe" id="president-message">
+            <div id="two-way-arrows"></div>
             <h3 class="condensed">President&rsquo;s Message</h3>
-            <p><span class="drop-cap">T</span>hese days, we’re often urged to “support the troops” — and rightly so. The men and women who have chosen to serve this nation, to protect us all as Americans, certainly deserve our gratitude and support.</p>
-            <p>Americans, certainly deserve our gratitude and support. One way to show that support — an increasingly important way, given the demanding, dynamic nature of today’s economy and society — is to ensure that veterans are prepared to succeed <i>after</i> military service. And for today’s veterans — really, for anyone — preparation means education: high-quality, credentialed, college-level learning that equips students to prosper in the global economy.</p>
+            <p><span class="drop-cap">T</span>he success of any college student is always a group project. No one crosses that stage to accept a degree or certificate unless there are people <i>offstage</i> &mdash; instructors who inspire, family members who care and cajole, friends who share and support. Role models are crucial, particularly for students who are unfamiliar with the college- going process or face other barriers to postsecondary success.
+            <p>In other words, mentors matter. And these days, they matter more than ever. As the nation grapples with its growing need for talent &mdash; a need that can only practically be met by significantly increasing rates of college attainment &mdash; we need more and more engaged, caring adults on the front lines.</p>
             <img class="thumb" src="/core/images/jamie-merisotis.jpg" alt="Jamie Merisotis, President and CEO" />
-            <p>Servicemen and women know this, of course. As the wars in Iraq and Afghanistan wind down, waves of returning vets are expected to enroll in America’s colleges and universities. In fact, hundreds of thousands of them already have shifted from combat to campus, aided significantly by their education benefits from the post-9/11 G.I. Bill. These student veterans are a large and growing part of an encouraging national trend, the trend toward increased educational attainment.</p>
-            <p>But there are areas of concern as well. The fact is, the transition to college presents significant challenges to many returning veterans. These students are, in many ways, the <i>most</i> nontraditional of all nontraditional students. These soldier/scholars are set apart from their campus peers — by age, by life experience, by envelopment in the military culture, and all too often by a close-up view of war’s horrors. Colleges and universities simply can’t conduct business as usual and expect to properly serve these students.</p>
-            <p>To their credit, many higher education institutions are reaching out to student veterans, implementing programs and offering services specifically designed to help them succeed. That’s what this issue of <i>Lumina Foundation Focus</i> is all about: highlighting the institutions and programs that are working well for returning veterans.</p>
-            <p>In this issue, you’ll meet several students who speak candidly about their transition to campus life, and you’ll meet the people who are helping to ease those transitions. For instance, you’ll read about:</p>
+            <p>Systems can be tweaked, processes and policies improved, but without direct and sustained <i>personal</i> involvement, it’s hard for college dreams to become realities.</p>
+            <p>A high-achieving, low-income student has about the same statistical chance of going to college as does a low-achieving, high-income student. Almost 25 percent of low-income students who score in the top quartile of standardized tests never go to college. And of those who do, many never earn a degree.</p>
+            <p>It’s no secret that the main institutional resource for pre-college advising, the high school counseling office, is struggling. And no wonder. The ratio of students to counselors at the typical high school is <a rel="shadowbox" href="/archives/<?php echo $dirName ?>/issue/images/counselor-ratio-chart.jpg">more than 450:1</a>. That number isn’t an issue for some students. But for first-generation and other at-risk students &mdash; those who lack the resources or the built-in “college knowledge” of their better-situated peers &mdash; the lack of help can quickly douse those college dreams.</p>
+            <p>Fortunately, in communities all over the nation, volunteer mentors are filling the guidance gap and making a difference. According to a report released in January by MENTOR: The National Mentoring Partnership, at-risk young adults who had a mentor are more likely to aspire to be college graduates than those who did not have a mentor (76 percent versus 56 percent). They’re also more likely than their non- mentored peers to actually be enrolled in college (45 percent versus 29 percent).</p>
+            <p>Models vary, but the underlying premise of mentoring programs is the same: Caring, knowledgeable adult mentors help at-risk kids over the hurdles they encounter during the college-going process. When kids do stumble, mentors help them up. In the process, mentors are themselves lifted up &mdash; not just emotionally, but also practically and professionally, by sharpening their leadership skills and improving time management and customer relationship management.</p>
+            <p>This issue of <i>Lumina Foundation Focus</i> explores the benefits of mentoring by shining the spotlight on three different programs. All are making a measurable difference for the students they serve &mdash; and for the mentors who provide that service. In this <i>Focus</i>, you’ll read about:</p></p>
             <ul>
-              <li>Ricardo Pereyda, a Tucson native and Iraq war Army veteran who barely survived the battle with what he called “an enemy <i>inside</i>” before turning his future around at the University of Arizona.</li>
-              <li>Natasha Crawford, another recent Arizona graduate who says that — even now, a decade after her deployment to Iraq in the initial ground war — she struggles with stress.</li>
-              <li class="last">Scott Hakim and Patrick Greene, former Marine Corps comrades who served in the same unit in Iraq and are now attending college together at Rutgers University. Both have benefited from Rutgers’ comprehensive approach to serving student vets.</li>
+              <li>iMentor, a one-on-one mentoring model that has served more than 12,000 at-risk students since it got its start in New York City in 1999. Using a curriculum developed especially for the program, iMentor volunteers nurture their charges’ college aspirations and help them build the non-cognitive skills that lead to college success.</li>
+              <li>The College Advising Corps (CAC), a national program that got its start in 2005 at the University of Virginia and has since grown to touch the lives of nearly 130,000 students at 425 high schools in 14 states. CAC uses a “near-peer” approach, recruiting recent college graduates to serve as advisers in high schools with high populations of underserved students.</li>
+              <li class="last">College Mentoring for Access and Persistence (College MAP), which was developed in 2009 as a corporate responsibility program of Ernst & Young (EY), and has since grown to serve nearly 900 students in 20 U.S. cities. The idea here is to pair at-risk students &mdash; often the first in their families to attend college &mdash; with experienced and accomplished professionals.</li>
             </ul>
-            <p>Along with the stories of these and other student veterans, you’ll also hear from several campus-based and national experts on veterans’ issues, including Michael Dakduk, executive director of Student Veterans of America. Dakduk says many of the lessons colleges learn in serving returning vets can apply to other at-risk populations as well. “If we can get this right for vets,” Dakduk insists, “we can get it right for all students.”</p>
-            <p>We believe this issue of <i>Focus</i> puts a much-needed spotlight on a rapidly growing and increasingly important population of postsecondary students. As a nation, we must serve these students more effectively — first, because we owe it to them; second, because they have so much more to give ... so much potential that higher education can help unlock.</p>
+            <p>Of course, the people and programs featured in this issue of <i>Focus</i> represent just a fraction of the mentoring activity now under way all over the nation. However it’s done &mdash; whether in organized programs such as these or in more informal, individualized efforts &mdash; this work is vital and needs to be expanded.</p>
+            <p>The benefits are huge. And as any mentor will attest, they extend in both directions.</p>
 
             <div id="signature"></div>
             <p><span class="sig">Jamie P. Merisotis<br />President and CEO</span></p>
+            <span id="1"></span><!-- Anchor points moved for scroll accuracy of this design, usually on sections -->
           </div>
 
-          <div class="section" id="1">
-            <div class="figure-audio" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/ricardo-pereyda.jpg" width="579" height="746" alt="Ricardo Pereyda survived a “hellish, violent year” in Iraq’s Sunni Triangle, only to be haunted by the experience once he returned to the States in 2005. But Pereyda has turned it around and is now positioned for success — thanks, in part, to the programs for student veterans at the University of Arizona.">
-              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/ricardo-pereyda.mp3" preload="none"></audio>
-              <p class="caption">Ricardo Pereyda survived a “hellish, violent year” in Iraq’s Sunni Triangle, only to be haunted by the experience once he returned to the States in 2005. But Pereyda has turned it around and is now positioned for success — thanks, in part, to the programs for student veterans at the University of Arizona.</p>
+          <div class="section stripe blue">
+
+            <h3 class="title">What once seemed a mismatch <span>turns out to be a marvel</span></h3>
+
+            <div class="figure cut-corner" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/jacobs-wade.jpg" width="579" height="561" alt="Adam Jacobs, a financial adviser with Morgan Stanley in New York City, has gained a lot from acting as a mentor to Kevin Wade (right). In fact, he calls it, “hands down, one of the best experiences I’ve been involved with. ... He’s like the little brother who actually listens to me.”">
+              <p class="caption">Adam Jacobs, a financial adviser with Morgan Stanley in New York City, has gained a lot from acting as a mentor to Kevin Wade (right). In fact, he calls it, “hands down, one of the best experiences I’ve been involved with. ... He’s like the little brother who actually listens to me.”</p>
             </div>
             
-            <h3 class="title">For legions of military veterans, college is<br>the new front</h3>
             <p class="author byline">By John Pulley</p>
 
-            <p><span class="drop-cap">I</span>In the winter of 2008, Ricardo (Rico) Pereyda prepared for his final mission with military precision. Behind the walls of his boyhood home, Pereyda placed blankets on the floor of his old bedroom. He wrote a letter of apology to his estranged wife and his parents, June and José. Then he lay on the floor, cocked a 9 mm handgun, placed the barrel of the weapon in his mouth and rested his finger on the trigger.</p>
-            <p>Pereyda hadn’t been himself since returning from combat in Iraq. A member of the U.S. Army Military Police Corps, he and his comrades performed dangerous security missions in Baghdad, Fallujah and elsewhere in and around the region’s Sunni Triangle. Pereyda’s platoon operated at a “high ops tempo,” the military term for a relentless pace of deployment. Teetering on the bleeding edge of war, Pereyda did his job and hung on. From February 2004 through March 2005, he encountered improvised explosive devices (IEDs), ambushes, mortar attacks and firefights. He bore witness to death and suffering at close range.</p>
-            <p>“It was a hellish, violent year, far beyond anything I ever experienced in the streets,” says Pereyda, who grew up poor in Tucson, Ariz. “You name it, we got hit with it.”</p>
-            <p>The unrelenting assault shattered Pereyda’s psyche. Once back in the States, he began having panic attacks. Pereyda sought relief in drugs, alcohol and isolation.  “It was a miracle if I could get out of the house,” he says. “I would get panic attacks just thinking about going outside.  ... I had an enemy <i>inside</i>.”</p>
-            <p>His wife left him, and he lost his house. With nowhere else to go, he moved back home.</p>
-            <p>Lying on the blankets, he shifted the handgun from his mouth to his temple and back again. Unable to fire the final round, he flung the weapon across the room, curled into a ball and sobbed. He couldn’t bear the thought of his parents finding his lifeless body.</p>
+            <p><span class="drop-cap">Y</span>ou’re from Long Island, the son of a man in the apparel business and a mother who didn’t work outside the home until you were 10. Having attended junior college, your parents insist — without ever really saying so — that you will go further. Absorbing their expectations, you graduate from high school and attend the University of Wisconsin, earning a bachelor’s degree in international relations in four years.</p>
+            <p>Degree in hand, you return to New York City, but not to Long Island. You land a coveted job with Lazard Asset Management, a leading global financial advisory and asset-management firm, with offices in San Francisco and Sao Paulo, Boston and Bogota, Paris and Panama City. You plug yourself into the high-voltage epicenter of the entire global enterprise: Wall Street. </p>
+            <p>You spend your days marketing complex financial products and investments to institutional and private investors. You serve clients with billions of dollars under management and you raise tens of millions more. You persuade investors to move large sums of cash into 10-figure hedge funds. </p>
+            <p>You live on the Upper West Side and work out at Reebok Gym, where comedian and actor Chris Rock goes to break a sweat and dues run to $215 per month (not including facials, $135).</p>
+            <p>Life is good. So what’s next?</p>
 
-            <q class="pullquote sans">You go from a (military) bureaucracy that tells you everything to do to a (higher education) bureaucracy that doesn’t tell you anything to do — it’s a night-and-day shift in structure.<span class="citation">Matt Randle, Army Reserve veteran and University of Arizona graduate</span></q>
+            <div class="figure-audio" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/jacobs.jpg" width="579" height="671" alt="For Jacobs, the mentoring experience is collaborative, not prescriptive. “This is our journey together,” he says of his work with his mentee, Kevin Wade. “There’s a lot of learning and growth that goes on for both of us.”">
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/adam-jacobs.mp3" preload="none"></audio>
+              <p class="caption">For Jacobs, the mentoring experience is collaborative, not prescriptive. “This is our journey together,” he says of his work with his mentee, Kevin Wade. “There’s a lot of learning and growth that goes on for both of us.”</p>
+            </div>
 
-            <p>In the span of four years since that day, Pereyda has become a new man. In May he graduated from the University of Arizona with a bachelor’s degree in public management and policy (with an emphasis on criminal justice and a minor in military science and leadership). He is the first person in his family to earn a four-year credential. He has received offers of jobs and internships.</p>
-            <p>Some 2 million men and women in uniform have returned or will return home in the next few years. Like Pereyda, many are veterans of deployments to Iraq and Afghanistan. As those wars draw to a close, hundreds of thousands of soldiers, airmen, sailors, Marines and members of the National Guard will enroll in college, enticed by education benefits provided by the post- 9/11 G.I. Bill and other programs for veterans. College is an opportunity for them to reclaim and get on with their lives.</p>
-            <p>Yet the outlook can be as unclear as a battlefield enshrouded in the fog of war. A significant number of student veterans suffer from post-traumatic stress disorder (PTSD), traumatic brain injury and other disabilities. Not all come to the desperate crossroads that Rico Pereyda reached, of course, but none of these veterans emerges unaffected. Most haven’t been in a classroom for years. Almost all will struggle at times to negotiate the tricky transition from one distinct culture to another. For these warrior scholars, a college campus is a minefield.</p>
-            
-            <div class="lazy-thumb thumb"><!--<a rel="shadowbox" class="expandable thumb" title="Cody Nicholls (center) talks with student veterans, including Natalia Baez Alvarez, who was deployed in Afghanistan and Greece while serving in the Air Force. Nicholls, assistant dean for Veterans Education and Transition Services (VETS) at the University of Arizona, understands vets’ need to find people they can trust on campus. As an Army Reservist who served in Iraq and Kuwait, Nicholls has “walked in the same boots.”" href="/archives/<?php echo $dirName ?>/issue/images/cody-nicholls.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/cody-nicholls-thumb.jpg" width="217px" height="152px" alt="Cody Nicholls (center) talks with student veterans, including Natalia Baez Alvarez, who was deployed in Afghanistan and Greece while serving in the Air Force." /></a>--></div>
-            
-            <p>“You go from a (military) bureaucracy that tells you everything to do to a (higher education) bureaucracy that doesn’t tell you anything to do,” says Cody Nicholls, 39, the University of Arizona’s assistant dean for Veterans Education and Transition Services (VETS). “It’s a night-and-day shift in structure.”</p>
-            <p>Colleges and universities are taking steps to clear the tripwires that imperil members of the at-risk veteran population. A few institutions have moved faster and more deliberately than most. The ones that have had the most success are those that have put in place comprehensive programs involving departments and offices across their campuses.</p>
-            <p>It isn’t an easy undertaking. The relationship between colleges and student veterans is complex and evolving — with potentially huge benefits for both parties. Student veterans “bring diversity of a type that higher education says it desires,” says Michael Dakduk, executive director of Student Veterans of America. Formed in 2008, the not-for-profit group is a network of more than 750 campus-based chapters that work to develop “the resources, support, and advocacy” that military veterans need to succeed in higher education and beyond.</p>
-            <p>The emergence of veteran-friendly colleges and universities also raises a question of broader significance: If institutions can implement comprehensive programs that help student veterans succeed, can they help unravel the complex array of challenges that bedevil other at-risk groups? First-generation college students? Minorities? Students from low-income families? Students suffering from substance abuse? Students with mental or emotional challenges?</p>
-            <p>“If we can get this right for vets, we can get it right for all students,” Dakduk says.</p>
+            <h4>Finding common ground</h4>
 
-            <h4 id="2">‘I didn’t like college kids’</h4>
-            <p>Growing up on the south side of Tucson in the 1990s, Rico Pereyda was a self-described troublemaker who was bored with school. College seemed unattainable and undesirable. “I knew I couldn’t afford it, and I didn’t like college kids,” says Pereyda. “It wasn’t in my future. I didn’t picture myself in college.”</p>
-            <p>Having been kicked out of several schools, he dropped out in 1999, his sophomore year, and took a job on a construction crew with his father. “I was happy working with my hands in the sun,” he says. Then came the terrorist attacks of Sept. 11, 2001. Pereyda quit his job to enlist in the military. A Navy recruiter turned him away, however, citing Pereyda’s failure to complete high school.</p>
-            <p>Determined to serve his country, Pereyda earned a diploma and enlisted in the Army. He survived boot camp and joined the 554<sup>th</sup> Military Police Company, based in Stuttgart, Germany. His platoon, the 230<sup>th</sup> MPC, deployed to Iraq.</p>
-            <p>Looking back on it, Pereyda says his descent into hell likely started on a day when everything went wrong. His platoon had been rerouted from its scheduled mission and ordered to guard a convoy of gas tankers that had been disabled in an attack. While on guard, he and his men fired on an insurgent truck driver who had failed to heed warning signals. Pereyda stuffed the man’s many wounds with gauze and loaded him into an evacuation helicopter. In a second shooting that same day, a 50-caliber round sheared off the side of a local man’s face — in full view of his grandson. Later, a Molotov cocktail transformed the disabled tankers into “infernos.” Before the day was out, Pereyda had learned that a buddy had been injured — a buddy whose platoon had taken the mission from which Pereyda’s had been diverted. The soldier had been hit by chunks of burning shrapnel that “lodged in his right temple, popped out his eye and nearly cleaved his arm.”</p>
-            <p>That horrible day was one of many for Pereyda. In fact, midway through his tour of duty, Pereyda’s platoon had lost half its men. And the fallout from those losses didn’t end when the tour did.</p>
-            <p>After he returned home to Tucson, Pereyda’s panic attacks worsened. “I knew I had to do something to get out of the house,” he says. His solution, in 2005, was to enroll at a local community college. When a biology instructor gave him a study sheet intended to help students prepare for the first exam, Pereyda assumed it was a comprehensive overview of the type he had been given in advance of military tests. He was dismayed to find that the exam included questions not covered by the guide.</p>
-            <p>“I looked at it as the professor setting me up for failure,” says Pereyda, who bolted the classroom without completing the exam. “That’s how I started in the academic world.”</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/walfrin-batista.jpg" width="579" height="690" alt="Rutgers University student Walfrin (Wally) Batista displays an image of his unit when it was deployed last fall in response to Hurricane Sandy. Many student veterans, including Batista, are in the Reserves and have been called to duty while attending school.">
-              <p class="caption">Rutgers University student Walfrin (Wally) Batista displays an image of his unit when it was deployed last fall in response to Hurricane Sandy. Many student veterans, including Batista, are in the Reserves and have been called to duty while attending school.</p>
-            </div>--></div>
-            
-            <p>In 2009, Pereyda’s circumstances began to improve. A Veterans Affairs (VA) counselor who had worked with him for several years suggested that he check out the University of Arizona. The institution had recently established veterans programs designed to help students like Pereyda to reach their education goals. There was even a new veterans center, a modest outpost that occupied a tiny room in the Old Main building. If you put half dozen people in the center, “it was packed,” Nicholls recalls.</p>
-            <p>Despite Pereyda’s misgivings, he began taking classes in the spring of 2010. “I never dreamed I would be coming here,” he says. “I was a very nontraditional student — in every sense of the word.”</p>
+            <p>If you’re Adam Jacobs, you become a mentor to a kid from Brooklyn. You meet him through iMentor, an innovative mentoring program based in New York City. You find common ground with a young man who has no close relative who went to college and who seems unlikely to buck family tradition and earn a four-year degree. You meet with the young man monthly, texting him and talking on the phone between visits. You encourage him to look at himself and his habits, to take the long view, to think about what he wants from his life and how he might attain those goals. You help him to become a better student, and you guide the young man through a college admissions process that for him is bewildering and frightening. </p>
+            <p>Two years later, it leads to this, a moment on the 44th floor of Morgan Stanley’s offices on Broadway, a financial citadel where on most days you advise high-wealth individuals and families on how to manage their often eye-popping assets. But today your thoughts are elsewhere, and you beam as you share the news that Kevin, your mentee, made the dean’s list in his first semester of college. This isn’t like sharing financial advice. This is visceral. You feel as if you made the honor roll, too.</p>
 
-            <h4 id="3">Veterans center is crucial</h4>
-            <p>Creating veteran-friendly campuses requires high-level administrative support, buy-in from faculty and staff, and accommodations that make campuses more accessible to student veterans. Successful programs typically feature an on-campus coordinator of student-veteran programs and veteran-specific orientations for new students. To be most effective, those elements must be embedded in an institution’s infrastructure, says SVA’s Dakduk.</p>
-            <p>Perhaps the most critical aspect of veteran-friendly colleges and universities is having a place on campus where student veterans can congregate and gain access to vital resources, according to Dakduk and others. Pereyda says Arizona’s veterans center was a second home, a place where he studied, fraternized and did volunteer work. Without it, he likely wouldn’t have made it to graduation.</p>
-            
-            <div class="carousel" id="portrait-gallery">
-              <h5>Veterans answer the question:<br><i>“What was the most difficult barrier you faced in making the transition to college?”</i></h5>
-              
-              <div id="carousel">
-                  <a href="#" class="buttons prev">left</a>
-                  <div class="viewport">
-                      <ul class="overview">
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/aaron-huff.jpg" width="579" height="386" alt="Aaron Huff">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/aaron-huff.mp3" preload="none"></audio>
-                              <p class="caption">Aaron Huff</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/caitlin-mccarthy.jpg" width="579" height="386" alt="Caitlin McCarthy">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/caitlin-mccarthy.mp3" preload="none"></audio>
-                              <p class="caption">Caitlin McCarthy</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/cesar-martinez.jpg" width="579" height="386" alt="Cesar Martinez">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/cesar-martinez.mp3" preload="none"></audio>
-                              <p class="caption">Cesar Martinez</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/eddie-kwan.jpg" width="579" height="386" alt="Eddie Kwan">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/eddie-kwan.mp3" preload="none"></audio>
-                              <p class="caption">Eddie Kwan</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/fernando-martinez.jpg" width="579" height="386" alt="Fernando Martinez">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/fernando-martinez.mp3" preload="none"></audio>
-                              <p class="caption">Fernando Martinez</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/jeff-gonzalez.jpg" width="579" height="386" alt="Jeff Gonzalez">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/jeff-gonzalez.mp3" preload="none"></audio>
-                              <p class="caption">Jeff Gonzalez</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/john-ogrady.jpg" width="579" height="386" alt="John O'Grady">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/john-ogrady.mp3" preload="none"></audio>
-                              <p class="caption">John O'Grady</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/john-vasquez.jpg" width="579" height="386" alt="John Vasquez">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/john-vasquez.mp3" preload="none"></audio>
-                              <p class="caption">John Vasquez</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/justin-sasso.jpg" width="579" height="386" alt="Justin Sasso">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/justin-sasso.mp3" preload="none"></audio>
-                              <p class="caption">Justin Sasso</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/martin-fennelly.jpg" width="579" height="386" alt="Martin Fennelly">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/martin-fennelly.mp3" preload="none"></audio>
-                              <p class="caption">Martin Fennelly</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/natalie-baez.jpg" width="579" height="386" alt="Natalie Baez">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/natalie-baez.mp3" preload="none"></audio>
-                              <p class="caption">Natalie Baez</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/patricia-larkin.jpg" width="579" height="386" alt="Patricia Larkin">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/patricia-larkin.mp3" preload="none"></audio>
-                              <p class="caption">Patricia Larkin</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/patrick-greene.jpg" width="579" height="386" alt="Patrick Greene">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/patrick-greene.mp3" preload="none"></audio>
-                              <p class="caption">Patrick Greene</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/richard-brown.jpg" width="579" height="386" alt="Richard Brown">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/richard-brown.mp3" preload="none"></audio>
-                              <p class="caption">Richard Brown</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/roy-harris.jpg" width="579" height="386" alt="Roy Harris">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/roy-harris.mp3" preload="none"></audio>
-                              <p class="caption">Roy Harris</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/scott-hakim.jpg" width="579" height="386" alt="Scott Hakim">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/scott-hakim.mp3" preload="none"></audio>
-                              <p class="caption">Scott Hakim</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/scott-plotts.jpg" width="579" height="386" alt="Scott Plotts">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/scott-plotts.mp3" preload="none"></audio>
-                              <p class="caption">Scott Plotts</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/thomas-krause.jpg" width="579" height="386" alt="Thomas Krause">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/thomas-krause.mp3" preload="none"></audio>
-                              <p class="caption">Thomas Krause</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/walfron-batista.jpg" width="579" height="386" alt="Walfron Batista">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/walfron-batista.mp3" preload="none"></audio>
-                              <p class="caption">Walfron Batista</p>
-                            </div>
-                          </li>
-                          
-                          <li>
-                            <div class="figure-audio no-hidden" role="img">
-                              <img src="/archives/<?php echo $dirName ?>/issue/images/slideshow/william-madigan.jpg" width="579" height="386" alt="William Madigan">
-                              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/carousel/william-madigan.mp3" preload="none"></audio>
-                              <p class="caption">William Madigan</p>
-                            </div>
-                          </li>
-                      </ul>
-                  </div>
-                  <a href="#" class="buttons next">right</a>
-                  <ul class="pager">
-                      <li><a rel="0" class="pagenum" title="Aaron Huff" href="#">1</a></li>
-                      <li><a rel="1" class="pagenum" title="Caitlin McCarthy" href="#">2</a></li>
-                      <li><a rel="2" class="pagenum" title="Cesar Martinez" href="#">3</a></li>
-                      <li><a rel="3" class="pagenum" title="Eddie Kwan" href="#">4</a></li>
-                      <li><a rel="4" class="pagenum" title="Fernando Martinez" href="#">5</a></li>
-                      <li><a rel="5" class="pagenum" title="Jeff Gonzalez" href="#">6</a></li>
-                      <li><a rel="6" class="pagenum" title="John O'Grady" href="#">7</a></li>
-                      <li><a rel="7" class="pagenum" title="John Vasquez" href="#">8</a></li>
-                      <li><a rel="8" class="pagenum" title="Justin Sasso" href="#">9</a></li>
-                      <li><a rel="9" class="pagenum" title="Martin Fennelly" href="#">10</a></li>
-                      <li><a rel="10" class="pagenum" title="Natalie Baez" href="#">11</a></li>
-                      <li><a rel="11" class="pagenum" title="Patricia Larkin" href="#">12</a></li>
-                      <li><a rel="12" class="pagenum" title="Patrick Greene" href="#">13</a></li>
-                      <li><a rel="13" class="pagenum" title="Richard Brown" href="#">14</a></li>
-                      <li><a rel="14" class="pagenum" title="Roy Harris" href="#">15</a></li>
-                      <li><a rel="15" class="pagenum" title="Scott Hakim" href="#">16</a></li>
-                      <li><a rel="16" class="pagenum" title="Scott Plotts" href="#">17</a></li>
-                      <li><a rel="17" class="pagenum" title="Thomas Krause" href="#">18</a></li>
-                      <li><a rel="18" class="pagenum" title="Walfron Batista" href="#">19</a></li>
-                      <li><a rel="19" class="pagenum" title="William Madigan" href="#">20</a></li>
-                  </ul>
+            <div class="aside" id="more-imentor">
+              <a href="#" class="expandable">More about iMentor</a>
+              <div class="sans">
+                <p><b>The program:</b> Since 1999, iMentor’s one-to-one mentoring model has matched 12,000 at-risk high school and college students with professional men and women who have helped them meet educational goals. Volunteer mentors use a curriculum developed by iMentor to nurture college aspirations and develop non-cognitive skills that promote academic success. </p>
+                <p><b>Mentors:</b> iMentor refined its model in New York City. Many of its mentors have worked for Wall Street financial firms.</p>
+                <p><b>Commitment:</b> Mentors commit to working with students for three or four years, either ninth grade through high school graduation or junior year of high school through the first year of college.</p>
+                <p><b>Scope:</b> iMentor NYC will serve nearly 3,000 New York City high school and college students this year. A franchise program, iMentor Interactive (iMi), extends the mentoring model to 13 not-for-profit organizations that serve 2,100 students in 11 states. Expansion plans include doubling the number of students served in New York, expanding the core program into three new cities, and doubling the number of iMi partnerships. The goal is to provide mentors to 20,000 new students in the next five years.</p>
+                <p><b>Funding:</b> iMentor receives the largest percentage of funds from foundations, individuals and corporations, including firms whose employees serve as mentors. Fees paid by schools and nonprofit organizations also help to offset expenses.</p>
+                <p><b>Success:</b> Approximately 67 percent of  the program’s 2013 graduates enrolled  in college.</p>
               </div>
             </div>
-            
-            <p>“I was very much a raw nerve,” says Pereyda of those first weeks and months on campus. He likens his initial experience at the university to jumping off a high dive into an ocean of 40,000 students. “Talk about the deep end. ... I clung to the veterans center.”</p>
-            <p>For many of the approximately 1,000 University of Arizona students who have served in the military, a chasm seems to separate them from their non-veteran peers. The age difference alone can be significant, of course. But as the saying goes: It’s not just the age, it’s the mileage. Traditional college students are away from home for the first time and eager to gain a measure of worldliness; veterans who have deployed multiple times to war zones halfway around the globe can be world-weary. A traditional college student might be concerned about conflicts with a roommate, while “a housing issue for us is somebody becoming homeless,” says Nicholls, an Army Reservist who served in Iraq and Kuwait. “We’ve had veterans camp out on a sofa (at the veterans center) until they get back on their feet.”</p>
-            <p>Most important, the centers are places where veterans make connections with men and women they can trust because they have “walked in the same boots,” Nicholls says. “Trust is a big thing for veterans. When you’re walking down the streets of Fallujah, you don’t know who is friend or foe.”</p>
-            <p>Pereyda met men and women at the veterans center who shared his experiences. “What helped me was another veteran saying, ‘C’mon, you can do it,’” he says. Two of these encouraging voices were those of Dan Standage and Matt Randle — two veterans who had made the transition years earlier and are now focused on easing the path for others.</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/dan-standage.jpg" width="579" height="357" alt="Dan Standage — who served 10 years in the Marine Corps, referring to it as “a calling” — lost his sight more than a decade ago in a rare reaction to a routine vaccine. He now works as an advocate for student veterans, saying: “Vets with disabilities need to see other vets with disabilities who are successful.”">
-              <p class="caption">Dan Standage — who served 10 years in the Marine Corps, referring to it as “a calling” — lost his sight more than a decade ago in a rare reaction to a routine vaccine. He now works as an advocate for student veterans, saying: “Vets with disabilities need to see other vets with disabilities who are successful.”</p>
-            </div>--></div>
-            
-            <p>Standage grew up in Arizona in a family of eight kids. On Veterans Day 1990, his senior year of high school, he enlisted in the Marine Corps. It was “a calling,” he says. The following spring he earned a high school diploma, becoming one of only two siblings to do so. “We were expected to work for my dad,” Standage says. “We were never expected to graduate.”</p>
-            <p>In Okinawa, Standage married and had two sons. A routine vaccine for Japanese encephalitis caused a rare reaction that destroyed Standage’s optic nerves. Having served his country for a decade, Standage returned home in 2001 — blind, divorced and with custody of his sons. Years of despondency followed. In 2004 he gained admittance to a VA rehabilitation center for the blind and began the process of reclaiming his life.</p>
-            <p>The center’s leaders offered Standage a job but rescinded it when they learned that he lacked higher education credentials. His second wife, whom he had met at the center, discovered that his disability qualified him for vocational rehabilitation education benefits, and Standage enrolled at the University of Arizona.</p>
-            <p>He was grateful to be in college, but frustrations mounted. Lack of public transportation meant that Standage was “stuck at the library” for long periods each day. He was “ticked off (and) antisocial,” he says. The experience wasn’t unique. If anything, it was an extreme version of the disorientation experienced by thousands of men and women who arrive at the university each semester. “Every new student who comes to this campus is blind,” he says.</p>
-            <p>Standage persevered, though, and in 2008 he became active in the growing national movement to create veteran-friendly college campuses. He began to understand the power of role models. “When I saw a blind guy struggling and going to college, I knew I could do it too,” he says. “Vets with disabilities need to see other vets with disabilities who are successful.”</p>
+            <h4>‘It was hard growing up’</h4>
+
+            <p>Kevin Wade grew up in Brooklyn’s Park Slope neighborhood well before gentrification had smoothed its rough edges. His father did maintenance work for the New York State Board of Education, and his mother was a security guard at the Crown Building in Manhattan. The youngest of five kids, Kevin didn’t know his two oldest brothers all that well because they were away, serving prison sentences for felony convictions. Childhood friends died from gunshots, some of them drug-related. Eventually, his parents divorced. “It was hard growing up. A lot of my friends dropped out of school,” says Kevin, on winter break from Medgar Evers College, where he recently completed his first semester. On a rainy January day, he hangs out in front of the Barclays Center, the Brooklyn Nets’ sparkling new arena that opened in 2012. “Park Slope hasn’t always been like this,” he says.</p>
+            <p>Despite the distractions of his formative years, Kevin did well in middle school. “I was always a hard worker in my own way,” he says. “People called me a perfectionist.” But something shifted when he began high school at New York’s Secondary School for Law. Basketball became Kevin’s top priority. Not far behind were girls, and then video games, which he often played into the wee hours. Waking up in time for school became a hardship. School attendance slipped; grades suffered. Academically, he fell into the middle of the pack. “When I first got to high school, it was a new environment. I felt like I could play around all day,” Kevin says. </p>
+            <p>Even as he was compiling an unexceptional resume, Kevin aspired to something better. Like many at-risk youth, he had big dreams. His college of choice was Syracuse University or maybe UCLA. At night, he would scan the cityscape from the 19th floor of his building and gaze on the Empire State Building, the Statue of Liberty, and the illuminated bridges that connect the outer boroughs to Manhattan. </p>
             
             <div class="expandable-audio thumb">
-              <a rel="shadowbox" title="Matt Randle, who as an Army Reservist was part of the invasion force in Iraq in 2003, later battled through campus barriers and earned a bachelor’s degree in 2011. He’s now in law school and does advocacy work on behalf of student veterans. “The point of a service member getting an education is to set them up for success down the road,” Randle says." href="/archives/<?php echo $dirName ?>/issue/images/matt-randle.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/matt-randle-thumb.jpg" width="217px" height="152px" alt="Matt Randle, who as an Army Reservist was part of the invasion force in Iraq in 2003, later battled through campus barriers and earned a bachelor’s degree in 2011." /></a>
-              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/matt-randall.mp3" preload="none"></audio>
+              <a rel="shadowbox" title="Romana Ryals (right), is a college success counselor with iMentor NYC. Her organization aids about 3,000 students each year in New York City, including Kevin Wade, a student at Medgar Evers College in Brooklyn." href="/archives/<?php echo $dirName ?>/issue/images/ryals-wade.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/ryals-wade-thumb.jpg" width="217px" height="152px" alt="Cody Nicholls (center) talks with student veterans, including Natalia Baez Alvarez, who was deployed in Afghanistan and Greece while serving in the Air Force." /></a>
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/romana-ryals.mp3" preload="none"></audio>
+            </div>
+
+            <p>“It’s beautiful. It made me feel like I was on top of the world,” says Kevin. He envisioned himself going places, but he had no idea how he would get there.    Kevin first met Adam Jacobs in September 2011, the beginning of Kevin’s junior year of high school. Outwardly, they made an odd couple, a 16-year-old African American from Brooklyn with a net worth that would barely dent a balance sheet and a white, affluent Manhattanite pushing 40. The differences weren’t strictly superficial. When Jacobs was a teenager, there had been a clear educational direction. “You were expected to go to a good four-year university,” he says. In Kevin’s case, “the expectation wasn’t there.”</p>
+            <p>Kevin and Jacobs found common ground in common experiences. They talked about their parents’ divorces, and Jacobs shared stories about his younger brother, Ryan. It didn’t take long for them to discover a shared fluency in the lingua franca of many New Yorkers: Knicks basketball. They deconstructed the games of Carmelo Anthony and Amar’e Stoudemire and analyzed how the stars’ ups and downs affected the team. When Kevin smiled, he looked a bit like a young Michael Jordan. Sizing up the young man, Jacobs discovered a “compassionate, thoughtful, sensitive” adolescent who “listens and takes direction. …  A great kid … but not necessarily directed.” </p>
+            <p>Jacobs followed the iMentor program’s curriculum and worked with Kevin to set SMART goals (specific, measurable, achievable, relevant, time-bound) for his junior year of high school. The emphasis was on the college process. Each month, they delved into another topic: applications, financial aid, study skills, entrance exams, stress management and resiliency, creating a college list, identifying college resources, etc. Kevin was an eager student. </p>
+
+            <div class="figure" id="inside-imentor">
+              <iframe width="589" height="331" src="//www.youtube-nocookie.com/embed/lNXMPCsvhoE?controls=0&modestbranding=1&rel=0&showinfo=0&color=white&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+              <p class="caption">Images and audio from Kevin Finnegan, a program coordinator for iMentor in New York City, provide a close-up view of the program.  </p>
             </div>
             
-            <p>In high school, Matt Randle was the kid labeled “college material.” Selected for gifted programs, Randle served on the student council and made the football and wrestling teams. Fascinated with history and the military, he yearned to be “part of something bigger.”</p>
-            <p>In 1998, on his 17th birthday, Randle enlisted in the Army Reserve. He completed basic training during the summer after his junior year and became an active-duty soldier following graduation. In 2003, he was part of the force that invaded Iraq.</p>
-            <p>Combat was “the very best ... and the very worst,” recalls Randle, 32, who served as a medic. “The friendship, camaraderie, brotherhood and family I had over there compares to nothing else. ... (But) I lost friends over there. I saw humanity at its ugliest, human life at its least valuable. There’s no way to adequately prepare oneself for that.” He was among the first wave of soldiers to return from fighting in Iraq. He came home suffering from PTSD, “a non-visible disability, one that not many people in higher education have been exposed to.”</p>
-            <p>At his first step in higher education, a community college near his home, Randle encountered a college that was not ready to support student veterans. “They didn’t even know how to process my G.I. Bill,” he says.</p>
-            <p>For two years he took classes alongside 18-year-old kids with whom he had nothing in common. Randle posted a 3.9 grade point average, yet he felt unmoored. “I got fed up. I was lost. I was angry. I wasn’t going to school for any other reason than I thought that that was what I was supposed to do,” says Randle, a burly, bearded redhead with eyes hidden behind sunglasses. “I felt like a foreigner in my own home. I felt like an alien.”</p>
+            <p>“Adam has a solution for everything,” Kevin says. “If he doesn’t have an answer, he’ll find it.”</p>
+            <p>During Kevin’s final two years of high school, he and Jacobs worked through crises and shared experiences. Recalling those events is like flipping through a family photo album, each image a plot point on an evolving relationship. </p>
+            <p>When the two were first getting to know each other, they began talking about study habits and the consequences of choices, such as playing Xbox until well past midnight. Jacobs suggested that Kevin set a curfew for himself. “He wasn’t doing well,” says Jacobs, recalling one of their early talks about grades. “I told him, ‘You can’t live your life like that.’”</p>
+            <p>Kevin heeded the advice, especially the part about impulse control, procrastination and delayed gratification. “He told me to put my priorities first before I try to fool around. It was basically like ‘Cry now and laugh later.’ It was kind of a new way of looking at things,” says Kevin, who had a “C” average when he met Jacobs. A year later, he was a “B” student. When he aced a test, an image of the graded exam would appear, via text message, on his mentor’s phone. “You’ve got to do the little things to do the big things,” Kevin says.</p>
+            <p>When Kevin discovered, in May 2012, that an unethical lawyer had forged his mother’s signature and taken his savings, $11,000 awarded to him several years earlier in the settlement of a personal injury claim, he sought help from Jacobs. Together, they are working with an organization that helps clients recover funds illegally taken by rogue lawyers. The attorney is in jail. “I was the go-to person,” Jacobs says. “That’s how our relationship has grown.”</p>
 
-            <q class="pullquote sans">Across the veteran population, we do an amazing job of taking care of each other and a piss-poor job of taking care of ourselves.<span class="citation">Cody Nicholls, Assistant dean, University of Arizona</span></q>
-
-            <p>When his father died, Randle moved home to help his mother, who works for the University of Arizona. He found a job doing advocacy work on behalf of veterans, which he enjoyed. Opportunities for advancement arose, but Randle lacked a degree. “I hit a wall,” he says. “I couldn’t move further in my career.”</p>
-            <p>In the fall of 2008, Randle enrolled for a single course at the university, encouraged by then-President Robert Neal Shelton. “The president of the university sought me out,” recalls Randle, sounding incredulous more than four years later. “If you have earnest support from the top, you can move mountains.”</p>
-            <p>In 2011, Randle earned a bachelor’s degree in family studies and human development. He married and enrolled in law school. He expects to graduate in May 2014. “I hope to continue to serve,” he says. “I would like to run for office.”</p>
-
-            <h4 id="4">‘Friendlies’ dot the campus</h4>
-            <p>In many ways, Randle and Standage got through college the hard way. Prior to 2008, the University of Arizona had no programs for promoting veterans’ success. Since then, it has advanced toward President Shelton’s goal of becoming the most veteran-friendly university in the country. The university created the VETS program, which draws on assets from across campus to support men and women who served in the military.</p>
-            <p>You’ll find stalwart supporters of veterans in the registrar’s office and the offices of admissions and financial aid. They show up at the disability resource center and at health services. Student veterans call them “friendlies.”</p>
-            <p>“Parts of this campus are incredibly helpful,” says Randle. “Parts are less aware of the help they could give.”</p>
-            
             <div class="figure-audio" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/maralynn-bernstein.jpg" width="579" height="555" alt="Maralynn Bernstein, known as Mama Bear to many vets on campus, is a veteran services coordinator in the registrar’s office at the University of Arizona. She works hard to explain government education benefits, pointing out: “There is really bad information out there.”">
-              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/maralynn-bernstein.mp3" preload="none"></audio>
-              <p class="caption">Maralynn Bernstein, known as Mama Bear to many vets on campus, is a veteran services coordinator in the registrar’s office at the University of Arizona. She works hard to explain government education benefits, pointing out: “There is really bad information out there.”</p>
+              <img src="/archives/<?php echo $dirName ?>/issue/images/mike-obrien.jpg" width="579" height="466" alt="Mike O’Brien is the CEO of iMentor. Since 1999, iMentor’s one-to-one approach has matched 12,000 at-risk students with professional men and women who help put — and keep — the young people on the path to college success.">
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/mike-o-brien.mp3" preload="none"></audio>
+              <p class="caption">Mike O’Brien is the CEO of iMentor. Since 1999, iMentor’s one-to-one approach has matched 12,000 at-risk students with professional men and women who help put — and keep — the young people on the path to college success.</p>
             </div>
-            
-            <p>Maralynn Bernstein, a veteran services coordinator in the Office of the Registrar, is a friendly. Some student veterans know her as Mama Bear. A few years ago, she realized that the customer service her office was providing vets “wasn’t what it should be.” Drawing on her background in retail sales, she revamped the office and became an advocate for student veterans. One goal was to make sure that the university’s vets understood government education benefits that can be “extremely complicated.”</p>
-            <p>“There is really bad information out there,” says Bernstein, recalling a veteran in medical school who thought he had used all of his benefits to earn an undergraduate degree. Bernstein investigated and found a provision in the law that allowed this student an additional 12 months of benefits — a $26,000 discovery.</p>
-            <p>“It was like the coolest thing ever,” she says. “If they don’t have to worry about where their money is coming from, they can focus on their studies.”</p>
-            
+
+            <p>Taking the SAT exam became an epic quest for Kevin, one he might not have completed without the help of his mentor. The process started well enough. iMentor emphasizes preparation for entrance exams, and Jacobs bought Kevin an SAT practice book. On test day, overcome with anxiety, Kevin bolted the testing site midway through the exam. “I was overwhelmed,” Kevin says. Jacobs promised him that they would be better prepared next time “so that this doesn’t happen again.”</p>
+            <p>The second time around, Kevin rode the subway by himself to the exam location, but he arrived a few minutes late. The proctors wouldn’t let him enter the testing area. “Adam, I don’t know what to do,” said Kevin, who called his mentor at 7:45 that Saturday morning. “I was heartbroken for him,” Jacobs recalls. “I told him it was a learning experience. There are certain life events that you have to show up for on time or be early. You cannot bend the rules.”</p>
+            <p>Afterward, with the next test date approaching, Kevin began to waver. He wasn’t sure that he wanted to make a third attempt. Jacobs was having none of it. On exam day, he showed up at Kevin’s door at 6 a.m., took him out for a pre-test breakfast and “tried to keep him calm. … There are moments in life when you have to face your fears.” A few hours later, Kevin called and said he had finished the test. “That call was worthwhile,” Jacobs says. “I was proud of him.”</p>
+            <p>Over time the relationship deepened. Kevin was changing; Jacobs, too. “This is our journey together. There’s a lot of learning and growth that goes on for both of us,” Jacobs says. Between Kevin’s junior and senior years of high school, he made plans to attend a summer college fair put on by the State University of New York system. He asked his mentor to join him, which “was his (Kevin’s) way of showing trust,” Jacobs says. “He was saying ‘I’m aware of what my next steps could be and I want you to be a part of that.’ It was meaningful.”</p>
+            <p>At the college fair, they talked about practical considerations, such as admissions requirements and the number of students served by various campuses. “That’s when you know you’ve gotten through,” says Jacobs, his eyes welling with tears. “It was grounded in reality. With his grades, those SUNY schools were his best chance at continuing to grow as a student. It wasn’t UCLA anymore.”</p>
+
             <div class="expandable-audio thumb">
-              <a rel="shadowbox" title="Michael Marks, lead psychologist for the Southern Arizona VA Health Care System, leads a group session in the veterans center on the Arizona campus. (Clockwise, from left:) Steve Timlin, Todd Crane, Amy Rogers, Richard Brown, Nick Kandis, Marks, Eddie Kwan and Natalia Baez Alvarez. Marks, who has worked 35 years with veterans who have suffered trauma, helped create a resiliency program to help student veterans adjust to campus life." href="/archives/<?php echo $dirName ?>/issue/images/michael-marks.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/michael-marks-thumb.jpg" width="217px" height="152px" alt="Michael Marks, lead psychologist for the Southern Arizona VA Health Care System, leads a group session in the veterans center on the Arizona campus." /></a>
-              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/michael-marks.mp3" preload="none"></audio>
+              <a rel="shadowbox" title="The mentoring relationship between Adam Jacobs (left) and Kevin Wade has had positive effects on both lives. Wade is now a successful college student, and Jacobs has redirected his career in finance so he can serve clients more personally." href="/archives/<?php echo $dirName ?>/issue/images/wade-jacobs.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/wade-jacobs-thumb.jpg" width="217px" height="152px" alt="The mentoring relationship between Adam Jacobs (left) and Kevin Wade has had positive effects on both lives. Wade is now a successful college student, and Jacobs has redirected his career in finance so he can serve clients more personally." /></a>
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/kevin-wade.mp3" preload="none"></audio>
             </div>
-            
-            <p>Another “friendly” on campus is Michael Marks, lead psychologist for the Southern Arizona VA Health Care System. Acclimating to civilian life is an arduous process that receives too little attention and too few resources, he says. It takes about a year for enlistees and newly commissioned officers to adjust to military life. The notion that three days in a military transition program will prepare vets for civilian or college life is preposterous.</p>
-            <p>During a counseling session with three Iraqi vets who were “frustrated, irritated” and at risk of dropping out of school, Marks hit on the idea of creating a resiliency program that would help student veterans ease into campus life. “Measures of resiliency are better predictors of retention and graduation” than grade-point average, test scores or class rank, says Marks, who for more than 35 years has worked with veterans who have experienced trauma.</p>
-            <p>He collaborated with Phil Callahan, professor emeritus of educational psychology, to develop a three-course program called Support of Education for Returning Veterans (SERV). The curriculum seeks to develop resiliency, leadership and empathy, among other skills. The program also trains student veterans to teach others as a means of becoming more effective learners themselves. Student veterans who complete the three-course SERV program have a retention rate of 95 percent, Nicholls says.</p>
-            <p>As a group, vets are notoriously reluctant to seek help. They tend not to identify themselves as disabled, and they are loath to use resources that they think could help someone else. “There’s a team mentality,” explains Amanda Kraus, assistant director of the university’s Disability Resource Center. “That’s how folks are socialized. The priority is your team or group. It’s not the individual.”</p>
-            <p>Randle agrees. “Across the veteran population, we do an amazing job of taking care of each other and a piss-poor job of taking care of ourselves,” he says. “We struggle to admit that we need the help. To overcome that requires a great deal of courage.”</p>
-            <p>Kraus’ office is responsible for determining the aids and accommodations that student vets need to compensate for disabilities. These aids fall into three broad categories: testing, course substitution and electronic course materials. Qualified students can get extra time to complete exams or permission to take tests in places with minimal distractions. They can substitute a language requirement if they’ve suffered a traumatic brain injury or if the language itself — Farsi, for example — triggers a stress response. Electronic course materials can compensate for loss of vision, hearing or concentration. Some students require the services of a note-taker.</p>
-            <p>Federal law requires equal access, but not everyone embraces the accommodations that make access possible. “There are skeptics among the faculty,” Kraus acknowledges.</p>
-            <p>Randle neutralizes the naysayers with compelling statistics. Less than 1 percent of the population will serve in the military, yet 25 percent of the country’s homeless population has served; unemployment among veterans is higher than joblessness in the general population; and the suicide rate among veterans is several times the national average, he says.</p>
-            <p>“Those things are connected,” concludes Randle. “The point of a service member getting an education is to set them up for success down the road.”</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/natasha-crawford.jpg" width="579" height="395" alt="Natasha Crawford (center), a nine-year Army veteran, earned a bachelor’s degree in May from the University of Arizona. Even so, she admits she’s still battling some of the demons that stem from her service in Iraq. Here, she joins other members of the campus Student Veterans of America chapter (including Rico Pereyda and Jessica Barnes [right]) at a campus event.">
-              <p class="caption">Natasha Crawford (center), a nine-year Army veteran, earned a bachelor’s degree in May from the University of Arizona. Even so, she admits she’s still battling some of the demons that stem from her service in Iraq. Here, she joins other members of the campus Student Veterans of America chapter (including Rico Pereyda and Jessica Barnes [right]) at a campus event.</p>
-            </div>--></div>
-            
-            <p>Women who are hesitant to show weakness while on active duty can be even more reluctant than men to seek help when they arrive on a college campus. Natasha Crawford, 31, a straight-A high school student, earned her diploma in 1999 and attended college for one year at Albany State University. Crawford followed in her father’s footsteps and enlisted in the Army, where she served from 2000 through 2009.</p>
-            <p>Military service changed her, she says, especially deployment to Iraq during the initial ground war, which was “pretty rough” and “really scary.” She became irritable and earned the nickname Pit Bull. “I was drinking a lot,” she says. “I wasn’t sleeping.” Crawford’s way of coping was “to be tough and never show weakness. I did my job and took care of my soldiers,” she says. “I’ve never gone to seek the help that I need.”</p>
-            <p>She resumed her education, in 2009, at the University of Arizona. That first year was a period of adjustment. She slept with a gun by her bed and constantly scanned the environment for danger. This mindset, known as “hyper-vigilance,” is common among combat veterans. Sufferers tend to be uncomfortable in crowds, don’t like to be in classrooms with people at their backs, and prefer to sit near exits.</p>
-            <p>Crawford adjusted to college life, befriended non-veteran students, and in May she earned a bachelor’s degree in nutritional sciences. Still, the stress lingers. Sometimes Crawford “shuts down” or snaps at her partner, whom she married in March.</p>
-            <p>“Eventually I’ll do something about it,” she says.</p>
 
-            <h4 id="5">Vets helping vets</h4>
-            <p>In December, the University of Arizona’s veterans center moved into a new space of 3,800 square feet. Nicholls, the assistant dean, shows a visitor the computer lab, a lounge and a quiet area where students unwind. He talks about the “vets-tutoring-vets” program and a résumé-writing course. He points toward a display of military patches and nameplates. “In the military, your job defines who you are,” he explains.</p>
-            <p>Undergirding everything at the center is a belief that veterans are most qualified to help veterans. “You can look in a vet’s eyes and get a pretty good idea of how they are doing,” says Nicholls.</p>
-            <p>When new student veterans arrive on campus, someone from the center escorts them to their first destinations, which often includes a stop to register their G.I. Bill benefits. This stop is at an office “clear across campus,” says Standage, who earned his bachelor’s degree in rehabilitation in 2009 and a master’s degree in visual impairment in December. “A lot of the vets fresh out of combat say it (the escort) reminds them of going outside the wire (in a combat zone) and having a hand on a buddy’s shoulder.”</p>
-            <p>For Randle, helping veterans provides a “sense of purpose.” A few years ago he undertook a “mission” to make it easier for veterans to get the classes they need. At a time when many students take six or more years to earn a bachelor’s degree, the G.I. Bill’s education benefit covers a maximum of 36 months of tuition, plus stipends for books and housing. Users must adhere to an approved education plan or risk losing benefits. Closed classes can cause huge problems.</p>
-            <p>Veterans “are tightly constrained in how we use our education benefits,” Randle says. “The (new) G.I. Bill is the only form of federal education assistance that has specific class requirements tied to it.”</p>
-            <p>Randle and others suggested that the university allow veterans to register for classes before other students, an idea that wasn’t immediately embraced by the administration. “Every time we were told ‘no,’ we called two more people,” Randle says. Perseverance prevailed, and now student veterans get a one-week head start on registering for classes — a perk long enjoyed by the university’s student athletes.</p>
-            <p>Efforts to promote the success of student veterans seem to be paying off. The four-year graduation rate at the University of Arizona is 40 percent. For student veterans, it is more than 50 percent. One possible explanation for the disparity is the degree to which on-campus veterans programs, including the veterans center, make it easy for students with military backgrounds to be part of something that has meaning for them. “The more active you are on campus, the more likely you are to persist,” Kraus says.</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/rob-bright.jpg" width="579" height="421" alt="Rob Bright, a former Navy intelligence specialist, now serves as assistant director of Rutgers’ Office of Veterans &amp; Military Programs &amp; Services. Here, at the entrance to Veterans House on the Rutgers campus, Bright talks with Caitlin McCarthy, a four-year Marine Corps veteran who served in Iraq.">
-              <p class="caption">Rob Bright, a former Navy intelligence specialist, now serves as assistant director of Rutgers’ Office of Veterans &amp; Military Programs &amp; Services. Here, at the entrance to Veterans House on the Rutgers campus, Bright talks with Caitlin McCarthy, a four-year Marine Corps veteran who served in Iraq.</p>
-            </div>--></div>
-            
-            <p>Persistence is also important to Stephen Abel and Rob Bright, veterans who serve their comrades on a campus far from Arizona’s. In fact, persistence and precision dominate their days at Rutgers University — right down to their morning coffee routine.</p>
-            <p>On the second floor of Veterans House on the edge of the Rutgers campus in New Brunswick, N.J., Bright, a former Navy intelligence specialist, carefully selects coffee beans roasted no more than three weeks earlier in nearby Highland Park, just across the Raritan River. He mixes 36 grams of beans (deconstructed in a burr grinder) with 910 grams of water (heated to 195 degrees Fahrenheit), strains the steeped mixture through a Chemex filter to remove bitterness, and pours the simmering liquid into a preheated cup. The result is a smooth brew with a real punch: three times the caffeine in a pedestrian cup of java.</p>
-            <p>“We love coffee,” says Abel, a retired Army colonel who directs the Office of Veterans &amp; Military Programs &amp; Services at Rutgers.</p>
-            <p>Abel and Bright, the program’s assistant director, are a detail-oriented (and well-caffeinated) team. They have to be. Managing a comprehensive program that helps student veterans attain their academic goals is a demanding and endless task.</p>
-            <p>Before the veterans office was created in the summer of 2010, Rutgers University had no student veterans program to speak of. Since then, Abel and Bright have used their boundless energy and their obsession with detail to build a campus-wide support system for veterans that is among the best in the country.</p>
-            <p>Relying heavily on a “boots on the ground” strategy, this pair has worked for almost three years to win the hearts and minds of would-be allies. They have established “high-level connections,” enlisting campus officials who can do the most to help veterans, Bright says.</p>
-            
+            <p>Before Kevin met Jacobs, the teen’s work experience had been limited to summer jobs toiling in stock rooms. Jacobs suggested that Kevin consider a summer internship that would expose him to an office environment, the kind of experience that “can be an important part of a young person’s life.” Kevin jumped at the opportunity, and Jacobs introduced him to an internship with a friend who runs a recruiting and staffing agency in the city.</p>
+
+            <p>Arranging the internship was a big deal for Jacobs; when people make referrals in the business world, he points out, “it’s important how they represent you.” Jacobs had faith that his mentee would “be accountable and work hard;” still,  he waited anxiously for confirmation that the first day of Kevin’s internship had gone well. Kevin called that evening, allaying his mentor’s fears and providing a full account of the day. Kevin couldn’t believe that he had his own desk, computer and telephone. “I had never heard him so excited,” Jacobs recalls.</p>
+            <p>Months passed and Kevin experienced more of Jacobs’ world. On one occasion, mentor and mentee went to the Apple store in Jacobs’ neighborhood to buy a laptop with money Kevin had won in iMentor’s inaugural Caroline Kim Oh Scholarship essay-writing contest. They visited Jacobs’ gym (“It’s like a resort!”), where Kevin spotted Chris Rock, a fellow Brooklynite. (The comedian’s career took off after superstar Eddie Murphy befriended Rock and became his mentor.)</p>
+            <p>Jacobs brought Kevin to his office and introduced him to colleagues, and they attended a fall benefit for iMentor. On the 42nd floor of the Mandarin Oriental Hotel, guests soaked up the view of Central Park on an October day when the foliage was bursting with color. “It was like artwork to me,” says Kevin. “It was beautiful.”</p>
+            <p>A year or so into the pair’s relationship, Jacobs changed employers, taking a job that more closely aligned with the way his world view had evolved since becoming a mentor. He left the institutional world of hedge funds to become a financial adviser at Morgan Stanley. Today he consults with individuals and families, doing work that is “more relationship-driven, educational and personally rewarding.”</p>
+            <p>Asked to consider whether being a mentor to Kevin influenced his career change, Jacobs concedes that “there’s a strong correlation.” In both endeavors, he “wants to have the other individual’s best interest at heart and to make sure they get the best guidance. … It’s very much in line with what I’m doing with Kevin.”</p>
+
             <div class="figure-audio" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/stephen-abel.jpg" width="579" height="421" alt="Stephen Abel (right), a retired Army colonel, directs the Office of Veterans &amp; Military Programs &amp; Services at Rutgers University. Here he confers with Marine Corps veteran Andrey Volfson and Patricia Larkin, who served in the U.S. Coast Guard. Abel says his office has worked nearly three years to ensure that “the veteran’s point of view is always considered” at Rutgers.">
-              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/stephen-abel.mp3" preload="none"></audio>
-              <p class="caption">Stephen Abel (right), a retired Army colonel, directs the Office of Veterans &amp; Military Programs &amp; Services at Rutgers University. Here he confers with Marine Corps veteran Andrey Volfson and Patricia Larkin, who served in the U.S. Coast Guard. Abel says his office has worked nearly three years to ensure that &ldquo;the veteran&rsquo;s point of view is always considered&rdquo; at Rutgers.</p>
+              <img src="/archives/<?php echo $dirName ?>/issue/images/tamiko-kamara.jpg" width="579" height="386" alt="Tamiko Kamara, a vice president at Morgan Stanley in New York City, has served as a college mentor to young women since 2006. “It helps me in so many ways,” she says. “When it comes time for my daughter to apply to schools, I’ll be ready.”">
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/tamiko-kamara.mp3" preload="none"></audio>
+              <p class="caption">Tamiko Kamara, a vice president at Morgan Stanley in New York City, has served as a college mentor to young women since 2006. “It helps me in so many ways,” she says. “When it comes time for my daughter to apply to schools, I’ll be ready.”</p>
             </div>
-            
-            <p>The duo is everywhere. There is no significant board or committee at the university that lacks Abel or Bright as a participant, including the committee to select a new vice chancellor for student affairs. At Rutgers, “the veteran’s point of view is always considered,” Abel says.</p>
-            <p>Headquarters is Veterans House, a three-story structure with dormer windows, a gabled entryway and a covered front porch ringed by white-painted railings. An American flag snaps in the breeze, and a visitor half expects to find an apple pie cooling on the window ledge. Nothing about the place suggests the rundown fraternity house that the university bought and refurbished a few years ago.</p>
-            
-            <div class="figure-audio" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/karen-stubaus.jpg" width="579" height="461" alt="Karen Stubaus, Rutgers’ vice president for academic affairs and administration, and Dick Edwards, executive vice president for academic affairs, are committed to ensuring that their university serves as a model for how to serve student veterans.">
-              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/karen-stubaus.mp3" preload="none"></audio>
-              <p class="caption">Karen Stubaus, Rutgers’ vice president for academic affairs and administration, and Dick Edwards, executive vice president for academic affairs, are committed to ensuring that their university serves as a model for how to serve student veterans.</p>
-            </div>
-            
-            <p>Veterans House serves multiple functions. It is a command center; a place where student veterans gather to study and socialize; and a hub for bringing critical university services to veterans. “It’s a place that breaks down the confusion and what can be the harshness of a large university,” says Karen Stubaus, vice president for academic affairs and administration. “It produces a comfort level and helps (student veterans) navigate the bureaucracies.”</p>
-            <p>The very existence of Veterans House speaks to the institution’s regard for students with military backgrounds. “If you don’t have leadership that is committed to (a veterans) program, even having a dedicated staff won’t solve the problem” of recruiting veterans who succeed in college, says Dick Edwards, executive vice president for academic affairs. The way Rutgers serves veterans is “perhaps a model for other universities.” Indeed, a number of other institutions already have inquired about its veterans programs, including UCLA, Washington State, Indiana and Penn.</p>
-            
-            <div class="lazy-thumb thumb"><!--<a rel="shadowbox" class="expandable thumb" title="Former Marines Scott Hakim (left) and Patrick Greene used to be brothers in arms, serving in the same four-man unit in a truck patrolling Iraq. Now they’re brothers on the Rutgers campus. Greene, a Florida native, opted for the New Jersey university on Hakim’s recommendation, knowing he’d have the support he needs to succeed." href="/archives/<?php echo $dirName ?>/issue/images/scott-hakim.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/scott-hakim-thumb.jpg" width="217px" height="152px" alt="Tod Sollar, wife Sarah, and 1-year-old son, Landry" /></a>--></div>
-            
-            <p>One of the program’s first clients was Scott Hakim, a Purple Heart recipient who suffered a traumatic brain injury while serving with the Marine Corps in Musa Kala, Afghanistan. His platoon was trying to seize a hill when a “daisy chain” of hidden IEDs detonated. If not for a hard rain that had compacted the sand and deadened the explosion, the blast — and Hakim’s injuries — would have been much worse.</p>
-            <p>After completing his service and enrolling at Rutgers, Hakim encountered typical difficulties. He arrived on campus knowing no one, and he discovered that he had little in common with younger, traditional undergraduates.</p>
-            <p>A mediocre student in high school, Hakim had to take developmental courses in math and English before enrolling in for-credit classes at Rutgers. His brain injury makes it difficult to concentrate and retain information, a deficit that he overcomes with Marine-instilled discipline. In other words, he does whatever it takes.</p>
-            <p>“If I read it and I don’t get it, I read it eight more times until I do,” Hakim says. “A three-hour lecture is nothing compared to a 12-hour patrol in Afghanistan.” Veterans House also introduced him to the university’s disability office, which arranged for him to take tests in a “reduced-distraction environment.”</p>
-            <p>Hakim and other student vets grapple with financial issues. The post-9/11 G.I. Bill covers most of his education expenses, but funds disbursed by VA to cover housing costs are “almost always late, and the book stipend is never enough to cover (the cost of) books,” says Hakim, who also suffers from post-traumatic stress and Crohn’s disease. He covers financial gaps with income earned as a work-study supervisor at Veterans House.</p>
-            <p>Overall, leaving the Marines to attend Rutgers “was a culture shock,” Hakim admits. Still, he has thrived. His grade-point average hovers around 3.8, and he says he wants to attend law school.</p>
-            <p>Hakim understands that his experience at Rutgers is atypical. Marine Corps buddies who attend other institutions tell him they “are not getting the same support.” In fact, he says, “most have nothing like this at all.”</p>
 
-            <h4 id="6">Program a boon to enrollment</h4>
-            <p>As Rutgers has earned a reputation as a veteran-friendly institution, its enrollment of vets has surged. In the summer of 2010, Rutgers knew of 446 veterans on campus. Today the office supports about 2,000 men and women who have served in the military.</p>
-            <p>Patrick Greene grew up in Tampa, Fla. His parents told him and his brother that only one of them could go to college. Patrick enlisted. Generations of men in his family had served in the military, including his grandfather, a Marine.</p>
-            <p>Greene served in the Marine Corps between 2007 and 2011. He met Hakim at Camp Geiger, North Carolina, during infantry school. They wound up in the same company, the same platoon — even on the same “fire team,” the four-man unit that shares a truck. In Iraq, the friends went on patrols together, executed raids, swept for IEDs, and chased after smugglers of military equipment.</p>
-            <p>Greene’s military service is now funding the education that his parents couldn’t afford to give him. When the time came to select a college, he opted for Rutgers, urged to come there by Hakim. He knew that he would get the support of a fellow Marine and an institution that had shown its commitment to veterans.</p>
-            <p>“I knew that going to school on my own — in a state where I didn’t know anybody — wouldn’t work,” he says.</p>
-            
-            <div class="figure-audio" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/will-madigan.jpg" width="579" height="378" alt="Will Madigan, president of the RU SERVS group, meets with Patrick Love, Rutgers University’s associate vice president for student affairs. Love says university staff and faculty need to understand that newly arrived veterans must be seen as arrivals from “another culture.”">
-              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2013/patrick-love.mp3" preload="none"></audio>
-              <p class="caption">Will Madigan, president of the RU SERVS group, meets with Patrick Love, Rutgers University’s associate vice president for student affairs. Love says university staff and faculty need to understand that newly arrived veterans must be seen as arrivals from “another culture.”</p>
-            </div>
-            
-            <p>The veterans programs at Rutgers were designed to fix glaring problems. In 2008, two students spoke up at an open forum and told then-President Richard McCormick that the university was not doing enough to recruit and serve student veterans. “They were incredibly eloquent about how sucky we were,” recalls Kathryn Loder-Murphy, a disability services coordinator.</p>
-            <p>Among their grievances, veterans complained about a university policy requiring all new undergraduates to live in freshman dormitories. Veterans as old as 50 found themselves living with kids who were asking the vets to buy them cigarettes.</p>
-            <p>Since then, modifications to Rutgers’ housing policy allow veterans to live in housing for graduate students. “These men and women are more mature and don’t fit into an 18-year-old dormitory,” Abel says. “Veterans are focused on their academics.” (In a recent academic term, only 19 of the approximately 2,000 student veterans at Rutgers received an academic warning.)</p>
-            <p>Rutgers’ steps to aid veterans were also a response to broader concerns, including those voiced in 2010 by Veterans Affairs Secretary Eric Shinseki. He warned then that the low second-year retention rate of the nation’s student veterans was wasting public funds and undermining the intent of the post-9/11 G.I. Bill. At Rutgers, where the total cost of a four-year degree tops $200,000, dropping out is costly.</p>
-            <p>Across the nation, more than 800,000 veterans have already used post-9/11 benefits to attend college. Total outlays could reach $90 billion within 15 years. Precise data about student veterans’ persistence and graduation rates are hard to come by; colleges haven’t done a good job of collecting and sharing the data.</p>
-            <p>That may change soon, however, thanks to a recent agreement between the VA and the National Student Clearinghouse. In January, Shinseki announced that the two organizations will share and compare their data on the success rates of service members who use the G.I. Bill at colleges and universities. SVA leader Michael Dakduk, who helped broker the deal, insisted that this new transparency would benefit millions of student veterans.</p>
-            <p>“Having that information (on graduation rates) is critical,” Dakduk said when the deal was announced. He pointed out that reliable data on the success of student vets “is what we need to find out the value of the G.I. Bill and especially to combat stories and speculation that veterans are not succeeding in college.”</p>
-            <p>For the two-man support team at Rutgers, failure is not an option. “This office exists for academic success,” Abel says. “Our goal is to have every vet who starts here graduate.”</p>
-            
-            <div class="lazy-thumb thumb"><!--<a rel="shadowbox" class="expandable thumb" title="Members of a group called RU SERVS, Rutgers University Services Education Resources for Veteran Students, meet weekly on campus to make sure vets’ needs are being addressed. (Standing, from left): Stephen Abel, Will Madigan and Rob Bright. (Seated, clockwise from lower right): Patricia Larkin, Kimberly Bruss, Andrey Volfson, Stephen Newberry, Thomas Hazlett Jr. and James McGuinness." href="/archives/<?php echo $dirName ?>/issue/images/ru-servs.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/ru-servs-thumb.jpg" width="217px" height="152px" alt="Members of a group called RU SERVS, Rutgers University Services Education Resources for Veteran Students, meet weekly on campus to make sure vets’ needs are being addressed." /></a>--></div>
-            
-            <p>Early on, Abel and Bright realized that helping veterans succeed was largely a matter of smoothing out the transition to an alien environment. They had to make vets feel that they belonged. “Rutgers is a big, bad liberal university,” Abel says. “The anxiety was whether they would feel welcome.”</p>
-            <p>Patrick Love, associate vice president for student affairs, likens the experience of a newly arrived veteran on campus to that of international student — except the veteran is far less recognizable.</p>
-            <p>“When someone comes up to me with a heavy foreign accent, I anticipate that they are on unfamiliar ground,” Love says. “When we send students on study-abroad (programs), we prepare them for the culture,” he says. But when a veteran arrives in New Brunswick, “staff doesn’t recognize that they’re talking to someone from a different culture.”</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/mike-beals.jpg" width="579" height="377" alt="Mike Beals, Rutgers’ vice dean for undergraduate education, volunteered to serve as an academic adviser to student veterans. He’s learned that some vets have trouble shifting gears after service and learning to chart their own course on campus. Often, veterans “are used to being told what to do,” says Beals; they often need help in creating an academic plan that is a “mosaic rather than a linear path.”">
-              <p class="caption">Mike Beals, Rutgers’ vice dean for undergraduate education, volunteered to serve as an academic adviser to student veterans. He’s learned that some vets have trouble shifting gears after service and learning to chart their own course on campus. Often, veterans “are used to being told what to do,” says Beals; they often need help in creating an academic plan that is a “mosaic rather than a linear path.”</p>
-            </div>--></div>
-            
-            <p>Abel and Bright have persuaded Rutgers staff that veterans deserve the same consideration given to foreign-exchange students. They determined that it was important to bring services directly to veterans, especially academic advising. Mike Beals, vice dean for undergraduate education, volunteered to counsel student veterans himself. He has learned that veterans’ varied academic backgrounds preclude a cookie cutter approach to counseling. He was also struck by the difficulty some student veterans have in shaking off the military mindset. “They are used to being told what to do,” says Beals, and so need to be shown that devising an academic plan is more of a “mosaic rather than a linear path.”</p>
-            <p>Elizabeth Rollins, manager of compliance in the university’s financial aid office, says that “having a central location for veterans is paramount. ... Access is really key when working with veterans.”</p>
-            <p>Much of the work done by Abel’s office to support veterans happens before they arrive on campus. Tom Krause completed five years of service in the Marines in Kiev, Ukraine, where he guarded the U.S. Embassy. During his final six months on duty, he corresponded regularly with Abel.</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/tom-krause.jpg" width="579" height="454" alt="Tom Krause served in the Marines, ending a five-year stint by helping guard the U.S. Embassy in Kiev, Ukraine. His transition to campus life began early, in the form of regular correspondence with Stephen Abel at Rutgers. During his final six months on duty, he corresponded regularly with Abel and calls Abel’s advice “a turning point” in helping him enroll.">
-              <p class="caption">Tom Krause served in the Marines, ending a five-year stint by helping guard the U.S. Embassy in Kiev, Ukraine. His transition to campus life began early, in the form of regular correspondence with Stephen Abel at Rutgers. During his final six months on duty, he corresponded regularly with Abel and calls Abel’s advice “a turning point” in helping him enroll.</p>
-            </div>--></div>
-            
-            <p>“He gave me that warm-and-fuzzy feeling,” says Krause, who at the time was deciding between going to college and staying in the Marines to pursue a career in special operations. Abel’s genuineness and grasp of facts “was the turning point” in Krause’s decision to seek a bachelor’s degree. “Steve knows everybody,” Krause says.</p>
-            <p>Engaging with veterans before they arrive on campus also helps to identify issues that can undermine academic achievement, including social isolation and traumatic brain injuries, “the signature wound of recent conflicts,” says Mary Kelly, a mental health counselor at the university.</p>
-            <p>“We catch a lot of them because of Steve’s efforts to connect with them before they even get to campus,” she says. Kelly counsels students at Veterans House whose fear of being labeled makes them reluctant to seek help at the university’s counseling center. “We can’t treat the people who don’t show up,” she says.</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/kathryn-loder-murphy.jpg" width="579" height="320" alt="Kathryn Loder-Murphy, a disability services coordinator at Rutgers, reviews a class assignment with Carol Baillie, a junior who is a Coast Guard veteran and now serves in the Coast Guard Reserve. Loder-Murphy makes regular visits to Veterans House to talk with former service members. “I’m far more successful being on their turf,” she explains.">
-              <p class="caption">Kathryn Loder-Murphy, a disability services coordinator at Rutgers, reviews a class assignment with Carol Baillie, a junior who is a Coast Guard veteran and now serves in the Coast Guard Reserve. Loder-Murphy makes regular visits to Veterans House to talk with former service members. “I’m far more successful being on their turf,” she explains.</p>
-            </div>--></div>
-            
-            <p>Kathryn Loder-Murphy, the disability services coordinator, also keeps regular office hours at Veterans House. Being close at hand makes it easier to find solutions to veterans’ problems. “I’m far more successful being on their turf,” she says. She also knows that the human touch isn’t the only kind that can help veterans. That’s why Rutgers was the first university to have a service dog on campus trained to help sufferers of post-traumatic stress.</p>
+            <h4>‘We’ll be friends forever’</h4>
 
-            <h4 id="7">Community college challenges</h4>
-            <p>Creating veteran-friendly institutions is particularly difficult for community colleges. Two-year institutions enroll the majority of students who have performed military service, yet they frequently lack resources they need to help vets.</p>
-            <p>John Vasquez, a 48-year-old career Navy seaman who suffers from PTSD, can vouch for those challenges. Two years ago, a counselor at VA’s Vocational Rehabilitation office in El Paso, Texas, informed Vasquez that the government would pay for him to attend El Paso Community College (EPCC). Given his dwindling career options, Vasquez jumped at the opportunity. “Go to the VA office at the school, and you’ll be taken care of,” the counselor told him.</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/john-vasquez.jpg" width="579" height="442" alt="John Vasquez, a 48-year-old Navy veteran, admits he’s had difficulty making the adjustment to college life. “A lot of schools will say they are veteran-friendly because they’ve got a VA office, but that is as far as it goes,” he says.">
-              <p class="caption">John Vasquez, a 48-year-old Navy veteran, admits he’s had difficulty making the adjustment to college life. “A lot of schools will say they are veteran-friendly because they’ve got a VA office, but that is as far as it goes,” he says.</p>
-            </div>--></div>
-            
-            <p>Vasquez wandered into a maze on the Valle Verde campus, where he was “pushed from office to office.” For hours he sought someone who would help him. Exasperated, he was heading for the exit when a member of the staff saw his distress and intervened. She ushered him through the bureaucracy and helped him to enroll.</p>
-            <p>Vasquez served in the Navy for 20 years, retiring in 2004. (His sons, 24 and 26, are Marines who recently returned from Afghanistan.) Back in the civilian world, he “worked a lot of in-between jobs,” but the economy worsened, and even menial work at auto parts stores and construction sites disappeared. College seemed his last, best hope. His goal is to earn an associate degree in business management, maybe a bachelor’s — something that will lead to a good job.</p>
-            <p>It hasn’t been easy. He doesn’t relate well to younger students, and he’s had to take developmental algebra. Back in a classroom for the first time since graduating from high school in 1982, Vasquez has enough struggles without the added stress of dealing with a college infrastructure that at times has let him down.</p>
-            <p>“A lot of schools will say they are veteran-friendly because they’ve got a VA office, but that is as far as it goes,” he says. “Someone needs to do something to better the system for student veterans.”</p>
-            <p>“Every day I get up and fight my anxieties,” he says. “A lot of vets fall. I’m afraid that someday I might fall.”</p>
+            <p>Life is good. So what’s next? </p>
+            <p>Kevin plans to continue taking classes at Medgar  Evers College, earning college credits for two years before transferring to a SUNY institution. After that,  he’s unsure. At the moment, he’s considering a career in software engineering. Wherever he goes, he’ll take with him lessons learned from Jacobs: “Perseverance. Dedication. Determination. Patience. Consideration. … Everything I do now, I put in 100 percent,” he says.</p>
+            <p>Will he and Jacobs stay in touch? “I think we’ll be friends forever,” Kevin says. “He’s like the big brother I never had.”</p>
+            <p>For his part, Jacobs says being a mentor to Kevin has been “hands down, one of the best experiences I’ve been involved with. … I’ve helped Kevin grow and become the person he’s meant to be. … He’s much more accountable and focused. … It’s been more rewarding than I ever could have imagined.</p>
+            <p>“He’s like the little brother who actually listens to me,” Jacobs says.</p>
+            <p>Helping Kevin has also helped Jacobs. “It’s a two-way street. There’s a lot of learning and growth that goes on for both of us. We both benefit. … Going forward, the commitment to giving back will always be a part of my life.”<span class="story-end"></span></p>
+            <span id="2"></span>
 
-            <h4 id="8">The benefits puzzle</h4>
-            <p>Frank Guerra, 66, served in the Air Force from 1966 until 1970. He enrolled at EPCC in 1974 and began advising EPCC students three years later. At the time, education benefits were straightforward. Veterans could go to college on the Vietnam-era education G.I. Bill. Their dependents could use the benefit for college if the veteran were completely disabled or dead. Since then, things have become more complicated, Guerra says.</p>
-            <p>Amendments to the original G.I. Bill of 1944 provide more choices: the Montgomery G.I. Bill, the Montgomery vocational rehabilitation program, the Survivors’ and Dependents’ Educational Assistance Program (DEA), the new Veterans Retraining Assistance Program (VRAP), programs for Reservists (Chapters 1606 and 1607). And now there’s the post-9/11 G.I. Bill, which is the most popular and the most complex of them all.</p>
-            <p>“That program has really grown,” says Raul Lerma, executive director of EPCC’s financial aid office. He describes the program, officially the Post-9/11 Veterans Educational Assistance Act of 2008, as “detailed.” The challenge for the college is sharpening students’ “understanding of the program and guiding them through the maze,” he says. “It’s an ongoing process.”</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/fernando-martinez.jpg" width="579" height="626" alt="El Paso native Fernando Martinez, a seven-year Army veteran, admits he “got bamboozled” in his efforts to properly use his post- 9/11 G.I. Bill education benefit. “The challenge is to get the right information,” he says. “There should be more veteran advisers and a counselor for veterans.”">
-              <p class="caption">El Paso native Fernando Martinez, a seven-year Army veteran, admits he “got bamboozled” in his efforts to properly use his post- 9/11 G.I. Bill education benefit. “The challenge is to get the right information,” he says. “There should be more veteran advisers and a counselor for veterans.”</p>
-            </div>--></div>
-            
-            <p>Fernando Martinez, an El Paso native who served in the Army from 2003 to 2010, says he and other veterans frequently opt to use the post-9/11 G.I. Bill education benefit, even though it’s not always the best option. Martinez says he made a selection without considering all of the details and implications. “I got bamboozled,” admits Martinez, a former car salesman. “The challenge is to get the right information. There should be more veteran advisers and a counselor for veterans.”</p>
-            
-            <div class="lazy-thumb thumb"><!--<a rel="shadowbox" class="expandable thumb" title="Arvis C. Jones, director of student leadership and campus life, talks with service members in her office at El Paso Community College. She says more advisers are needed to help give student veterans “a full understanding of their options” when it comes to education benefits available to veterans." href="/archives/<?php echo $dirName ?>/issue/images/arvis-jones.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/arvis-jones-thumb.jpg" width="217px" height="152px" alt="Arvis C. Jones, director of student leadership and campus life, talks with service members in her office at El Paso Community College." /></a>--></div>
-            
-            <p>Arvis C. Jones, director of student leadership and campus life on EPCC’s Valle Verde campus, agrees that there is a need for more advisers. “When there is not enough staff or time to spend with the individual, it’s difficult to impart the information to them so that they have a full understanding of their options,” she says.</p>
-            <p>Delays in disbursing benefit checks issued by the VA are another source of friction. Failure to pay tuition on time can mean student veterans are dropped from classes. VA’s bureaucratic missteps put “schools in an adversarial relationship with the veterans,” says Terra Benson, director of admissions and registrar at Pima County Community College in Tucson.</p>
-
-            <h4 id="9">From bombs to books</h4>
-            <p>Martin Fennelly, 28, enlisted in the Army in 2004 and learned to dispose of bombs. Detonating ordnance, even from a distance of 100 yards, often means that “you get the crap knocked out of you,” says Fennelly, who stopped counting the number of disposals after 100. Doing his job resulted in a traumatic brain injury, hearing loss in one ear, vertigo, tinnitus, dizziness, migraine headaches and short-term memory loss.</p>
-            
-            <div class="lazy-thumb thumb"><!--<a rel="shadowbox" class="expandable thumb" title="Martin Fennelly is doing all he can to create a bright future for his wife and three children, including his son Martin Roy, 1. Fennelly, 28, defused bombs while serving with the Army in Afghanistan. He recently earned his associate degree from El Paso Community College; he hopes to pursue a bachelor’s and land a job in health care." href="/archives/<?php echo $dirName ?>/issue/images/martin-fennelly.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/martin-fennelly-thumb.jpg" width="217px" height="152px" alt="Martin Fennelly is doing all he can to create a bright future for his wife and three children, including his son Martin Roy" /></a>--></div>
-            
-            <p>In 2010, out of the Army and unable to find a job, Fennelly used the vocational rehabilitation benefit to begin taking classes at EPCC. He expected to struggle a bit. At Johnsonville High School in upstate New York, he had been “average in every way,” finishing 25th in a class of 50 students. What he didn’t anticipate was that the college would struggle too.</p>
-            <p>“It’s really tough,” says Fennelly, who criticizes Congress for offering financial incentives to veterans without providing the funds that colleges need to properly serve these students. “This is probably the largest amount of veterans they’ve had. There are growing pains.”</p>
-            <p>Fennelly says his monthly housing allowance is tied to the number of days he is in school that month, a calculation that had him scrambling to pay rent during the holiday break. “Christmas is pretty tough on veterans going to school and using their benefits,” he says. “Those are the things they don’t tell you.”</p>
-            
-            <div class="lazy"><!--<div class="figure" role="img">
-              <img src="/archives/<?php echo $dirName ?>/issue/images/adrian-acuna.jpg" width="579" height="465" alt="El Paso Community College graduate Adrian Acun&#771;a (left), who used his VA benefits to help pay for his degree, got help from a number of people on campus — including Francisco Guerra (center), assistant director of veterans affairs, and Raul Lerma, executive director of EPCC’s financial aid office.">
-              <p class="caption">El Paso Community College graduate Adrian Acun&#771;a (left), who used his VA benefits to help pay for his degree, got help from a number of people on campus — including Francisco Guerra (center), assistant director of veterans affairs, and Raul Lerma, executive director of EPCC’s financial aid office.</p>
-            </div>--></div>
-            
-            <p>Fennelly, who has a wife and three children, earned his associate degree in May. He intends to pursue a bachelor’s degree at the University of Texas at El Paso or New Mexico State University. He dreams of a job in the medical field that will allow him to afford a house, a car and college for the kids. “I just want to make enough to provide for my family,” he says.</p>
-            <p>He knows that college is the best way for him to reach that seemingly simple goal. And, to their credit, officials at EPCC are working to help him get there. Still, like hundreds of other institutions all over the nation, EPCC lacks the resources necessary to support truly comprehensive services for military veterans.</p>
-            <p>In fact, despite the oft-voiced national pledge to “support our troops,” programs like those at Rutgers and the University of Arizona are very much the exception, not the rule.</p>
-            <p>“A lot of other campuses around the country have failed,” says Arizona’s Dan Standage. “I talk to a lot of guys (from other campuses), and they don’t feel like anyone cares about them.”</p>
-            <p>Rico Pereyda certainly remembers that feeling. But now he’s one of the lucky ones. On a balmy, late-winter day, under a wide blue sky, Pereyda sits at a patio table on the Arizona campus and talks about the strides he’s made since coming to college. “The most rewarding thing I’ve done here is help other people,” he says.</p>
-            <p>That realization about his recent past has helped Pereyda focus on the future. With his bachelor’s degree now firmly in hand, he ruminates on the concept of service — on what it means to live a fulfilling life. And his immediate concern is one that hits close to home: He’s working to empanel a group of experts to examine suicide among veterans.</p>
-
-            <p id="author">John Pulley, a professional journalist for more than two decades and a former staff writer for “The Chronicle of Higher Education,” is a freelance writer and editor based in Arlington, Va.</p>
           </div>
 
-          <div class="section" id="10">
+          <div class="section stripe green">
+
+            <h3 class="title">Near-peer mentors mean it <span>when they say: ‘I’ve been there’</span></h3>
+
+            <div class="lazy"><!--<div class="figure cut-corner" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/elder-bye-wright.jpg" width="579" height="561" alt="College adviser Erica Elder confers with seniors Orin Bye (far left) and Austin Wright at her alma mater, Bassett High School in southern Virginia. Elder, a recent graduate of the University of Virginia, returned to Bassett recently to serve as a near-peer mentor for an organization called the College Advising Corps.">
+              <p class="caption">College adviser Erica Elder confers with seniors Orin Bye (far left) and Austin Wright at her alma mater, Bassett High School in southern Virginia. Elder, a recent graduate of the University of Virginia, returned to Bassett recently to serve as a near-peer mentor for an organization called the College Advising Corps.</p>
+            </div>--></div>
+            
+            <p><span class="drop-cap">W</span>hen a young woman returns to a place of painful experience — bullying, debilitating shyness, financial problems and low self-esteem — there are bound to be strong emotions. For Erica Elder, who came home to Bassett High School in southern Virginia last fall to be a college adviser and mentor, the first day back was, well … </p>
+            <p>“At first it was really weird, walking into school as faculty,” Elder says. </p>
+            <p>Three years after earning a high school diploma from Bassett, Elder had returned a different person. For one thing, she had a bachelor’s degree from the University of Virginia. Simply being accepted into one of the nation’s most prestigious universities defied every expectation she’d had for herself only a few years earlier. At the time, mired in desperation, she couldn’t conceive of graduating from an elite university in three years. And the notion that she would come back to help kids not much younger than herself to defy similarly low expectations would have been, in Elder’s words, weird. </p>
+            <p>“I really wanted to go to college, but I felt too stupid,” says Elder, recalling her outlook for much of high school. And yet she succeeded, largely because a kind and competent mentor told her that she could — and showed her how. “He helped me a lot. I needed somebody to tell me I could go to school,” says Elder.</p>
+            <p>She is one of nearly 400 young men and women on the front lines of the College Advising Corps, a fast-growing “near-peer” mentoring program. Founded in 2005, CAC recruits and trains recent college graduates and embeds them in high schools across the country with high concentrations of at-risk students. CAC has two primary missions. The first is to increase the number of low-income, first-generation and underrepresented students entering and completing college. The hope is that they will “fulfill their potential through education,” says Nicole Hurd, CAC’s founder and CEO. “The job of an adviser is to be a messenger of hope.”</p>
+
+            <div class="expandable-audio thumb">
+              <a rel="shadowbox" title="Erica Elder (center) confers with her College Advising Corps (CAC) colleagues (from left) Joy Pugh, Nicole Hurd and Kevin Anselmo. Hurd, CAC’s founder and CEO, says: “The job of an adviser is to be a messenger of hope,” to help low-income, first- generation students “fulfill their potential through education.”" href="/archives/<?php echo $dirName ?>/issue/images/elder-pugh-hurd-anselmo.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/elder-pugh-hurd-anselmo-thumb.jpg" width="217px" height="152px" alt="Erica Elder (center) confers with her College Advising Corps (CAC) colleagues (from left) Joy Pugh, Nicole Hurd and Kevin Anselmo. Hurd, CAC’s founder and CEO, says: “The job of an adviser is to be a messenger of hope,” to help low-income, first- generation students “fulfill their potential through education.”" /></a>
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/joy-pugh.mp3" preload="none"></audio>
+            </div>
+
+            <p>Students who are not from college-going families or communities frequently fail to meet educational goals because they lack experience with the process. Near-peer mentors — that is, individuals of similar age, ethnicity and socioeconomic status who have “made it” in college and beyond — are particularly well-suited to helping these at-risk students. </p>
+            <p>“What seem like little process barriers (filling out financial aid forms, understanding the admissions calendar, applying for scholarships and fee waivers, visiting college campuses, etc.) become huge because students don’t know how to navigate the process,” Hurd says. “The power of the model is having near-peer advisers saying, ‘If I can do it, you can, too.’”</p>
+            <p>Students who come from outside the college-going mainstream face an uphill climb to postsecondary success regardless of intelligence or their ability to do college-level work. Only about 3 percent of students attending the country’s 140 most selective postsecondary institutions are from families in the bottom fourth of the income scale. When those students graduate, CAC comes calling, actively recruiting them as mentors. Nearly three-fourths of CAC advisers are from under-represented populations; 32 percent are African American, 30 percent Latino, 63 percent Pell Grant-eligible, and 54 percent are the first in their families to go to college. </p>
+            <p>“They really understand the barriers because they made it to the finish line themselves under similar circumstances,” Hurd says. “Research shows that the most influential people in a young person’s life are their peers. The messenger matters.”</p>
+
+            <h4>State-specific training</h4>
+            
+            <p>Before beginning her two-year assignment as an adviser at Bassett High School, Elder underwent four weeks of intensive training at the University of Virginia, which serves as CAC’s chapter headquarters in the state. The program’s structure ensures that it has at least one university sponsor in each of the 14 states where it now operates. “Our training is very state-based,” Hurd says. “Getting into college in Virginia is very different from getting into college in Texas.”</p>
+            <p>CAC’s summer training program encompasses topics from college essays and financial aid to SAT/ACT preparation and personal finance. Trainees visit colleges throughout the state, meeting admissions officers they can turn to later, when students encounter problems. By the end of the month-long training, advisers learn that “their best resource is each other and former advisers,” says Joy Pugh, director of the Virginia CAC. A local philanthropic organization, the Harvest Foundation, has covered the cost of CAC and advisers in Henry County since the program’s inception.</p>
+
+            <div class="figure-audio" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/nicole-hurd.jpg" width="579" height="470" alt="In addition to helping students, Nicole Hurd says, CAC aims to create “a transformative experi- ence” for the mentors during their two-year commitment as advisers. “They’re not the same people after two years,” Hurd insists. “It’s awesome to watch how much they grow.”">
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/nicole-hurd.mp3" preload="none"></audio>
+              <p class="caption">In addition to helping students, Nicole Hurd says, CAC aims to create “a transformative experi- ence” for the mentors during their two-year commitment as advisers. “They’re not the same people after two years,” Hurd insists. “It’s awesome to watch how much they grow.”</p>
+            </div>
+
+            <p>Elder was as ready as a newly minted mentor could be when the first student seeking help walked into her new office. Naturally, she recalls, “I immediately got nervous.” The student, a senior, insisted that he wanted to study criminal justice at a four-year institution, making clear his aversion to community college. Asked about his grades, the young man avoided giving a straight answer. Elder knows from personal experience that it’s usually not an indicator of high academic achievement “when students say they can’t remember their grades.” </p>
+            <p>Elder learned that the student’s GPA wasn’t good at all, and like many of the school’s seniors, he hadn’t taken the SAT or the ACT. “I was going to have my first hard conversation,” she says. Growing up in Henry County, on the North Carolina border, Elder knew about hard conversations. </p>
+
+            <div class="aside" id="more-cac">
+              <a href="#" class="expandable">More about the College Advising Corps</a>
+              <div class="sans">
+                <p><b>The program:</b> In 2005, the University of Virginia created the College Guide Program to address the growing gap in college access for low-income, first-generation and underrepresented students. Early success attracted financial support, and the program expanded to become the National College Advising Corps. Taking a “whole school” approach, College Advising Corps (it has since dropped “National” from its name) recruits recent graduates from partner universities and assigns them to underserved secondary institutions. Advisers supplement overworked school counselors. </p>
+                <p><b>Mentors:</b> The program’s 375 near-peer  advisers resemble the students they mentor. Most advisers were the first in their families to attend college (54 percent) and were eligible for Pell Grants (63 percent). The majority are also people of color (69 percent).  </p>
+                <p><b>Commitment:</b> CAC advisers sign up for a two-year commitment. Before mentoring students, advisers complete a rigorous four- to six-week training program. </p>
+                <p><b>Scope:</b> The program serves 128,000 students at 425 high schools in 14 states. CAC’s expansion plans call for serving 1,000 high schools and 300,000 students annually within five years.</p>
+                <p><b>Funding:</b> The program’s university partners pay approximately 60 percent of program costs through grants and funds raised by staff; CAC covers 40 percent.</p>
+                <p><b>Success:</b> At schools served by CAC, college-going rates increase by 8 to 10 percentage points. In North Carolina, 88 percent of students who graduated from CAC schools and went to college returned for their second year, according to preliminary results from a recent study. The persistence rate for all UNC-system schools is 82 percent. </p>
+              </div>
+            </div>
+
+            <p>The county is home to Martinsville Speedway, the only NASCAR track in continuous operation since the racing circuit began in 1948 — back when the region had been a thriving, twin-engine industry town. Bassett Furniture was at the center of what was then a booming furniture industry; area textile mills were humming. All of that changed long before Erica Elder came of age. Today, the furniture trade is a shadow of its former self, and shuttered apparel factories dot the area landscape. In 2003, even the local minor league baseball team, the Martinsville Astros, left town, relocating to Greeneville in 2004.  </p>
+            <p>“My dad was always changing jobs,” Elder recalls.</p>
+            <p>She had challenges of her own. As a freshman at Bassett, Elder “had really low self-esteem. … I was just trying to get by, but I was really good in math and science,” she says. She aspired to college, dreaming of Harvard, maybe Yale. “I had been looking at colleges since middle school … looking but not really understanding. I heard you had to be rich to go to college.”</p>
+            
+            <div class="lazy"><!--<div class="figure" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/elder-blankenship-varner.jpg" width="579" height="470" alt="Returning to Bassett High School has given Erica Elder the opportunity to reconnect with people who helped her along her own path to college success, including teachers Ann Blankenship (left) and LaDonna Varner.">
+              <p class="caption">Returning to Bassett High School has given Erica Elder the opportunity to reconnect with people who helped her along her own path to college success, including teachers Ann Blankenship (left) and LaDonna Varner.</p>
+            </div>--></div>
+
+            <p>The Elders weren’t rich. To help with expenses, young Erica worked the snack bar at the Roll-A-Bout Skating Center. At one point, the Elders considered moving to Richmond, where they had relatives, as a way to save money. “It was devastating,” recalls Elder, though at least she said she’d “gotten to a point where the bullying had finally stopped.” </p>
+            <p>Despite the upheaval, she moved ahead with the college process, taking the SAT in her sophomore year. “I did terrible on it,” she says. Subsequent attempts yielded little improvement. She attended a youth fair and had a discouraging encounter with a man at the “college options” booth. The stranger, someone Elder presumed to be a person of authority, asked Elder about her college plans. She mentioned some state institutions she was considering — the University of Virginia, Virginia Tech, Ferrum College, about 40 minutes north of Bassett. He asked about her SAT scores, which she divulged. “He was like: ‘There is no way you can go to college right out of high school,’” she recalls. “That wasn’t good at all. I immediately assumed I couldn’t do it.”</p>
+            <p>Elder shut down. She avoided the high school’s guidance counselors and sought what seemed a more attainable career path. “The military is big around here,” says Elder, so she  took the Armed Service Vocational Aptitude Battery. “I did really well.”</p>
+
+            <h4>Distrust of ‘experts’</h4>
+
+            <p>It was here, at this crossroads, that Elder met Ethan Jorgensen-Earp, a CAC adviser who had been assigned to Bassett High School to help students like her. At first, she was leery of him. “I didn’t want to talk to any other ‘experts’ about college,” says Elder. “I was ashamed of my (SAT) scores.”</p>
+            <p>When they finally met, Jorgensen-Earp “was friendly … he gave me direct eye contact, he listened to what I had to say,” she recalls. He assured Elder that her scores weren’t that bad. “I immediately felt comfortable with him,” says Elder. She relented and told him her scores. He expressed confidence that Elder’s SAT scores were good enough for her to get into some of the colleges she was considering. She had a good GPA. “Just him telling me that I could do it” changed her outlook — and her direction, Elder recalls. She began the college-application process. </p>
+
+            <div class="lazy-thumb thumb"><!--<a rel="shadowbox" class="expandable thumb" title="Shekila Yralux, senior counselor to the students at Bassett High School, appreciates having a CAC adviser on hand to help ease what can be a heavy workload. She says she and Erica Elder “work really well together as a team.”" href="/archives/<?php echo $dirName ?>/issue/images/elder-yralux.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/elder-yralux-thumb.jpg" width="217px" height="152px" alt="Shekila Yralux, senior counselor to the students at Bassett High School, appreciates having a CAC adviser on hand to help ease what can be a heavy workload. She says she and Erica Elder “work really well together as a team.”" /></a>--></div>
+
+            <p>The emotional roller coaster ride continued when she submitted her FAFSA and learned that her family’s estimated contribution was much higher than she had expected. “I was like: ‘Here we go again. I can’t go to school.’ I almost cried. Hearing anything about money automatically made me sad.”</p>
+            <p>Jorgensen-Earp helped quell that despair. He met with Elder’s parents and explained options for paying education expenses. They formulated a plan that would allow their daughter to attend the University of Virginia without imperiling family finances. Elder, whose younger sister is now enrolled at Virginia, graduated with total student loan debt of $13,000. </p>
+            <p>Having received so much help from her mentor, Elder wanted to pass it on. That’s how she ended up back in Bassett, preparing to have that “hard conversation” with a student who lacked the grades to attend a four-year college straight out of high school. Elder, who has been trained to help students find colleges that are good fits — academically and socially — told the young man about a guaranteed transfer program that would assure him admission to his college of choice if he attended a community college for two years and posted a 2.8 grade point average. “He was fine with that,” Elder says. “That experience gave me the confidence to talk to more students.” </p>
+            <p>At other times, she tells students to aim higher. Austin Wright, a fourth-generation south Virginian, had decided to go to a community college close to home, even though his GPA and test scores were excellent. “Around here, leaving your parents is a big deal,” says Elder, who encouraged Wright to broaden his college choices. “She pushed a little bit,” admits Wright, who applied to Radford University, 90 minutes northwest of Bassett, and East Tennessee State, three hours west. “Whatever I needed to know, she was there to help.”</p>
+            <p>Elder makes presentations to groups of students and counsels them individually. She attends after-school sports events because advisers are most effective when they are “completely integrated into the community,” Hurd says.</p>
+
+            <p>Elder also helps Bassett’s overworked guidance counselors keep up with a demanding workload. Simply filing paperwork to waive fees for SAT and ACT tests is a challenge when 60 percent of students qualify for free or reduced-price lunches. “It is almost impossible for a school counselor to register that many students alone,” says Shekila Yralux, the senior counselor. “She helps me to offset that. We work really well together as a team.”</p>
+            <p>CAC’s advisers are having an impact. In Virginia, the “vast majority” of high schools with CAC advisers are sending more kids to college, Pugh says. Between 2008 and 2012, among graduates of those numerous CAC high schools where the college-going rate increased, that rate went up by at least 2 percentage points — and as much as 14 points, Pugh says. In North Carolina, students from CAC high schools had a first-to-second-year persistence rate of 88 percent during the 2012-2013 academic year. Among students from high schools with no CAC adviser, the persistence rate was 82 percent. </p>
+            <p>In addition to helping underserved high school students to make good college choices, CAC’s other primary mission is to provide advisers “a transformative experience,” Hurd says. A survey of former advisers at Virginia high schools found that 91 percent of them gained skills and competencies that assisted them professionally; 92 percent had their next position, whether employment or graduate school, within three months of completing their two-year advising commitment; and 88 percent were satisfied or very satisfied with their next career step. “They’re not the same people after two years,” Hurd says. “It’s awesome to watch how much they grow.”<span class="story-end"></span></p>
+            <span id="3"></span>
+          </div>
+
+          <div class="section stripe orange">
+
+            <h3 class="title">Corporate program <span>matches students with professionals</span></h3>
+
+            <div class="figure-audio cut-corner" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/leblanc-ruiz-lara.jpg" width="579" height="561" alt="Alexandra “Allie” LeBlanc (right), a 26-year-old EY employee, works with Cesarina Ruiz-Lara, a student at Boston’s Madison Park Technical Vocational High School. LeBlanc, a Fordham University graduate, said she volunteered for EY’s College MAP program after conferring with a colleague “who lit up talking about it.”">
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/allie-leblanc.mp3" preload="none"></audio>
+              <p class="caption">Alexandra “Allie” LeBlanc (right), a 26-year-old EY employee, works with Cesarina Ruiz-Lara, a student at Boston’s Madison Park Technical Vocational High School. LeBlanc, a Fordham University graduate, said she volunteered for EY’s College MAP program after conferring with a colleague “who lit up talking about it.”</p>
+            </div>
+            
+            <p><span class="drop-cap">O</span>n a bitterly cold January day, close to 20 junior-year students perform a monthly ritual, filing into a third-floor conference room at Boston’s Madison Park Technical Vocational High School on Malcolm X Boulevard in the city’s Roxbury neighborhood. Meeting them here are young professionals from Ernst & Young (EY) who’ve abandoned their cubicles for a few hours to lead a team mentoring session with low-income, first-generation students who aspire to go to college.</p>
+            <p>Mentors and mentees are young and ethnically diverse, but it’s easy to sort them out. The group is cleanly divided along a distinct “suits or T-shirts” fashion fault line. Today, though, the students are the suits, encouraged by their mentors to try business attire on for size. </p>
+            <p>Brendan Sweet, only two years removed from college himself, leads a discussion about college academics. “First question: What is a major?” asks Sweet, a gray “Ernst & Young” crewneck tee pulled over his Oxford dress shirt. No answer issues from mentees scattered around the perimeter of the fluorescent-lit, cinderblock room. A kid stares at the pink tile floor. Sweet tries again: “Does anyone know what a minor is?” </p>
+            <p>To keep things moving, mentors talk about their own majors and minors. Galina McDonnell quizzes the kids on how much education is required to enter various career fields. Yomarie Habenicht asks students to turn in motivational letters they should have written to their senior-year selves. Mentees who finished the assignment get a movie pass. “We want to make sure you guys did your homework,” Habenicht says. McDonnell reminds them of an upcoming SAT prep course offered by Let’s Get Ready, which will refund the $25 course fee to students who attend 75 percent of the study classes. Today’s session concludes with students surfing the College Board website for more information about academic disciplines. </p>
+
+            <div class="lazy"><!--<div class="figure" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/beil-mateo.jpg" width="579" height="659" alt="During one of College MAP’s monthly group training sessions, EY professional Stephen Beil (right) explains the college- admissions process to Madison Park student Hugo Mateo. Beil and other College MAP mentors also interact with mentees frequently via e-mail, texts and phone calls.">
+              <p class="caption">During one of College MAP’s monthly group training sessions, EY professional Stephen Beil (right) explains the college- admissions process to Madison Park student Hugo Mateo. Beil and other College MAP mentors also interact with mentees frequently via e-mail, texts and phone calls.</p>
+            </div>--></div>
+
+            <p>The employees who volunteer their time are at the center of Ernst & Young’s College MAP (Mentoring for Access and Persistence) program, an in-house, team-based college mentoring initiative that helps underserved kids in Boston, Detroit, Los Angeles, New York and 19 other cities. EY created the program five years ago to encourage “skills-based” volunteerism. “We know from research that when people use their skills, they deliver 10 times the value than when they are doing good in a non-skilled way,” says Deborah K. Holmes, director of corporate responsibility for EY in the Americas. </p>
+
+            <h4>Learning by mentoring</h4>
+
+            <p>EY fashioned College MAP to align with its corporate culture by encouraging employees to deploy their skills in the areas of education, entrepreneurship and environmental sustainability. The program’s benefits flow in more than one direction. By assisting students, volunteers gain skills that help them with colleagues and clients: leadership, public speaking, collaboration, inclusivity and, yes, mentoring, a professional skill that EY’s leaders value.</p>
+            <p>“Mentoring happens every day on the job,” says Holmes, referring to the way EY acculturates and advances employees. “Our learning model is a mentoring model. Knowing how to be an effective mentor is mission-critical for our workforce.” College MAP’s team-based model also aligns with expectations that employees will learn to work collaboratively with people from diverse backgrounds. “Everything that happens at EY happens in teams,” Holmes says. </p>
+            <p>College MAP is a classic win-win, EY’s leaders say. Mentors fit in better and enjoy their work more than peers who don’t volunteer. “We have quantitative evidence that employees who are involved in College MAP score significantly higher on all of our measures of employee engagement,” Holmes says. “We want them to be proud of working at EY. We want them to recommend EY to their friends. We want them to stay with us if they get an offer elsewhere. Our people who are involved with College MAP are statistically more likely to answer those questions in the affirmative than a matched sample of their peers.”</p>
+
+            <div class="lazy-thumb thumb"><!--<a rel="shadowbox" class="expandable thumb" title="Belle Moreau, a guidance counselor at Madison Park, confers with Leroy Nesbitt. Nesbitt is program director at College for Every Student, a nonprofit organization that has helped Ernst & Young develop and manage College MAP, which has become the company’s signature community assistance program." href="/archives/<?php echo $dirName ?>/issue/images/moreau-nesbitt.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/moreau-nesbitt-thumb.jpg" width="217px" height="152px" alt="Belle Moreau, a guidance counselor at Madison Park, confers with Leroy Nesbitt. Nesbitt is program director at College for Every Student, a nonprofit organization that has helped Ernst & Young develop and manage College MAP, which has become the company’s signature community assistance program." /></a>--></div>
+
+            <p>Among corporate mentoring programs that strive to promote college success among low-income, first-generation, at-risk youth, College MAP is emerging as a model. “This is unique in terms of one corporation producing this many mentors across the country,” says Leroy Nesbitt, program director at College for Every Student, a nonprofit organization that has helped EY develop and manage the company’s signature corporate responsibility program focused on education. </p>
+            <p>Back on the third floor of Madison Park High School, mentor Alexandra “Allie” LeBlanc and student Cesarina Ruiz-Lara huddle around a computer monitor. LeBlanc, 26, is from a white, middle-class neighborhood in Concord, N.H. She graduated from high school in a class of 78 people and earned a degree from Fordham University. She has been at EY for a year. She found out about College MAP from a colleague “who lit up talking about it,” says LeBlanc. She jumped at the chance to help at-risk kids. “My college experience was tough enough (even) having all the support in the world.”</p>
+            <p>Cesarina lives with her father, who brought her here from the Dominican Republic. Cesarina’s mother is still there. The daughter ended up at Madison Park because that’s where the Boston Public Schools sent her. The school’s 1,120 students arrive here from across the city, often without a friend.  </p>
+            <p>Many of them bring baggage. Forty percent of Madison Park’s students have special needs, twice the average of other schools. English is a second language for 30 percent of students here, and most of the kids don’t have a parent who went to college. With more than 1,100 students on site, the school’s five guidance counselors have their hands full. “We’re a high-needs school,” says Mary Gail Bryan, Madison Park’s director of student support services.</p>
+
+            <div class="aside" id="more-cmap">
+              <a href="#" class="expandable">More about College MAP</a>
+              <div class="sans">
+                <p><b>The program:</b> EY’s College MAP program helps low-income high school juniors and seniors prepare for a college degree program. Created as a pilot in 2009, College MAP uses a team model to demystify the process of applying to and affording college. In addition, mentors work with students to build persistence skills that keep them on the college track.</p>
+                <p><b>Mentors:</b> One-third of EY employees are first-generation college students, including the firm’s deputy managing partner. The program’s volunteers cross racial, ethnic, rank and generational lines.</p>
+                <p><b>Commitment:</b> Mentors promise to volunteer three or four hours each month. In addition to monthly group training sessions, mentors interact more frequently with buddy mentees via telephone calls, e-mails, texts and social media.</p>
+                <p><b>Scope:</b> College MAP operates in more than 20 U.S. cities and has plans to expand. College for Every Student, a not-for-profit organization, helps EY manage the program.</p>
+                <p><b>Success:</b> More than 90 percent of students mentored by College MAP volunteers are now enrolled at a two- or four-year institution. The program has so far mentored more than 860 students. In the current school year, 360 EY mentors are working with more than 560 high school juniors and seniors. </p>
+              </div>
+            </div>
+
+            <p>Indeed. Gang activity is common, metal detectors a daily reality. On consecutive days in January, a student and the parent of another child were killed, the latter while closing up a barbershop for the evening. “Our kids have witnessed and been victims of a great deal of violence,” Bryan says.  </p>
+            <p>LeBlanc and other mentors can’t change everything,  but they are helping kids clear at least a few hurdles that trip them up. Mentors help with FAFSA forms and college applications; they offer encouragement and promote resilience; they do what they can to keep kids on the college track. The week before Christmas, Madison Park’s College MAP cohort visited Boston College, met with the director of admissions, and received an etiquette lesson from an international chief of protocol. It was an epiphany for Cesarina, who returned home and set a proper table for her family’s next dinner. “It’s not just helping them with college; it’s helping them with their life skills,” Bryan says. </p>
+            
+            <div class="lazy"><!--<div class="figure" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/belle-moreau.jpg" width="579" height="579" alt="Guidance counselor Belle Moreau says more and more students at Madison Park are expressing interest in — and increasing demand for — the College MAP program. In fact, some students had to be turned away this year. “Hopefully next year they can take more kids,” Moreau says.">
+              <p class="caption">Guidance counselor Belle Moreau says more and more students at Madison Park are expressing interest in — and increasing demand for — the College MAP program. In fact, some students had to be turned away this year. “Hopefully next year they can take more kids,” Moreau says.</p>
+            </div>--></div>
+
+            <p>Cesarina credits College MAP mentors with helping her to order priorities and set a direction for herself. “They help me to take the school more seriously,” says Cesarina, who continues to develop fluency in English. “If you don’t study to get more preparation for your future, you don’t get an opportunity. … I was pretty lost. They helped me a lot.”</p>
+            <p>When College MAP started at Madison Park, only students with high grade-point averages were invited to participate. Now it’s open to everyone. Demand is increasing, and students are being turned away. “Hopefully next year they can take more kids,” says Belle Moreau, one of the guidance counselors.</p>
+            <p>LeBlanc, a corporate recruiter at Ernst & Young, expected the College MAP experience to be rewarding. What she didn’t foresee was that being a mentor would change the way she thinks about her job. But now, after seeing firsthand the talented, at-risk kids at a school like Madison Park, LeBlanc’s perspective has shifted. She now makes a conscious effort to seek “alternative sources for talent so we don’t go straight to Harvard Business School. … It has forced me to look outside the typical profile.”</p>
+            <p>“Sometimes I feel that (being a mentor) benefits me more than it does them,” LeBlanc says. “It really makes me feel good at the end of the day.” </p>
+
+            <h4>Many points of contact</h4>
+
+            <p>In addition to the group dynamic of College MAP’s team model, each mentee also has a buddy mentor. Between monthly group meetings, mentor-mentee pairs talk on the telephone, exchange texts and e-mails, and meet in person. Also this year, for the first time, the program gives mentors the option of continuing to work with mentees who are making the transition to college. </p>
+            <p>Walter Maya is one of College MAP’s first transition mentors. A native of Colombia and the youngest of four children, he was brought here by his single mother. Like one-third of EY’s employees, he is a first-generation college student for whom the “college track was bumpy.” When Maya arrived, fresh out of high school, on the campus of Jersey City State College (since renamed New Jersey City University), officials told him that he couldn’t move into a dorm because he hadn’t completed the necessary paperwork. He stayed with his brother in the Bronx, commuting two or three hours a day to attend classes. “That wasn’t really sustainable,” he says. </p>
+
+            <div class="expandable-audio thumb">
+              <a rel="shadowbox" title="Northeastern University student Olga Estephanie Menjivar Garcia says her mentor, Walter Maya (left), has served as a steady source of support. Having Maya as a mentor “was very inspiring for me,” she says. “He had a difficult time to get to where he is. I was also struggling.” With Maya’s help, however, Olga overcame those pre-college struggles and earned a full scholarship to Northeastern." href="/archives/<?php echo $dirName ?>/issue/images/maya-garcia.jpg"><img src="/archives/<?php echo $dirName ?>/issue/images/thumbs/maya-garcia-thumb.jpg" width="217px" height="152px" alt="Matt Randle, who as an Army Reservist was part of the invasion force in Iraq in 2003, later battled through campus barriers and earned a bachelor’s degree in 2011." /></a>
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/olga-menjivar-garcia.mp3" preload="none"></audio>
+            </div>
+
+            <p>After spending much of his first semester of higher education in a car, Maya transferred to Hunter College. There, things worsened. “I got really homesick. I felt lost. I didn’t know what to do,” he says. With no mentor to help him, Maya struggled. Transferring two more times, he eventually made his way to Northeastern University where, seven years after starting college, he finally earned a degree in accounting. </p>
+            <p>Today, Maya is an established professional. He mentors Olga Estephanie Menjivar Garcia, who was just 3 when her mother left Honduras and came to the United States “to find a better life for us.” More than  a decade later, Olga, then 14, joined her mother here.  The teen didn’t speak English, but she was good at math. She wanted to attend Boston’s John D. O’Bryant School of Mathematics & Science, but she didn’t understand  the transfer process, and she didn’t ask for help. “I was very afraid. I didn’t want to owe anything to anyone.  I like to help, but I didn’t like to ask for help,” says  Olga, whose self-sufficiency earned her admission to Madison Park.</p>
+            <p>By the time she was a junior, she had conquered her aversion to seeking help. Olga enrolled in an SAT-preparation course, through which she learned about the College MAP program and eventually met Maya. “I feel like everything is connected. When I ask for help or get involved with other things, I get connected with other people,” she says.</p>
+
+            <h4>A natural connection</h4>
+
+            <p>Maya and Olga were simpatico from the start.  Both have roots in Latin America; both have benefited from educational opportunities; and both have struggled to fit in. Early in Maya’s career, he was one of the few Latinos at EY, and he didn’t always feel included. He admits that some of the isolation was self-imposed, and he’s quick to affirm that the firm’s partners have been “amazing mentors and friends.” Olga says having Maya as a mentor “was very inspiring for me. He had a difficult time to get to where he is. I was also struggling.”</p>
+            <p>Writing her college essay was “a really difficult time. There was so much I wanted to say, and I really didn’t know how to.” Maya encouraged her to be more personal. He told her about his own essay, a letter in which he explained to his absent, alcoholic father that he had “turned out OK.” Inspired by that openness, Olga wrote honestly about “growing up without my mother and overcoming the language barrier.”</p>
+            <p>She won a full scholarship to attend Northeastern University, one of 10 students selected from almost 500 applicants to the university’s Torch Scholars Program. During a probationary period, she underwent a rigorous seven-week summer immersion program that tested her ability to perform at a high academic level. Once again, Olga had to prove that she belonged. </p>
+
+            <div class="figure-audio" role="img">
+              <img src="/archives/<?php echo $dirName ?>/issue/images/walter-maya.jpg" width="579" height="571" alt="Walter Maya says his experience as a College MAP transition mentor helped prompt “a complete transformation” in the way he approaches his professional life.">
+              <audio src="http://cdn.irongatecreative.com/lumina/focus/spring2014/walter-maya.mp3" preload="none"></audio>
+              <p class="caption">Walter Maya says his experience as a College MAP transition mentor helped prompt “a complete transformation” in the way he approaches his professional life.</p>
+            </div>
+
+            <p>The program involved math classes, a seminar and a part-time job. It was “a bit stressful. I was losing confidence in myself,” says Olga, who shared her doubts with Maya via text message. “You’re a smart girl,” he’d text back. “You can do it.” The encouraging words helped keep her going, she says, adding: “I was a little bit afraid of disappointing him.” </p>
+            <p>She didn’t. Having survived the immersion program, she became a full-time college student. She just missed making the dean’s list for the fall semester, earning two As, one B+ and a C+. This semester, she’s taking Chemistry II, Calculus II, Biology and College Writing. Her academic interest is behavioral neuroscience. </p>
+            <p>Helping his mentee overcome obstacles has helped Maya to undergo “a complete transformation” in his career. Mentoring had a lot to do with it, he says.</p>
+            <p>“I’m not just a tax professional,” he says. “I’m an EY employee who is part of the community. … When I look back on what was missing, the one thing that was missing was community service.”<span class="story-end"></span></p>
+
+          </div>
+
+          <div class="section stripe" id="extras">
+
             <h3 class="condensed">Extras</h3>
             
             <ul>
-              <li class="first">The student veterans in our <a href="#portrait-gallery">portrait gallery</a> reveal their biggest challenges in making the transition from combat to campus.</li>
-              <li>Some campus officials worry about offering <a href="archives/spring2013/vet-help.php">“too much” help</a> to student veterans.</li>
-              <li class="last"><a href="archives/spring2013/community-college-adjusts.php">Pima Community College</a> adjusts right along with the returning vets it seeks to serve.</li>
+              <li class="first">Program coordinator offers an inside view of <a href="#inside-imentor">iMentor</a>.</li>
+              <li>More mentors and mentees share stories of <a href="/archives/<?php echo $dirName ?>/changed-lives.php">changed lives</a>.</li>
+              <li>MENTOR: <a href="http://www.mentoring.org/">The National Mentoring Partnership</a></li>
+              <li>Time magazine story on <a href="http://nation.time.com/2013/10/09/coached-through-college-professional-motivators-decrease-dropout-rates/">the power of “coaching”</a></li>
+              <li class="last">Some facts about <a href="/archives/<?php echo $dirName ?>/issue/pdfs/cac-infographic.pdf">the College Advising Corps</a></li>
             </ul>
-            
-            <h5>Organizations that help student veterans</h5>
-            <br>
 
-            <ul>
-              <li class="first">
-                <a href="http://www.acenet.edu/higher-education/topics/Pages/Supporting-Student-Veterans.aspx" class="external-link">American Council on Education</a> — ACE offers a wealth of online services for colleges and universities that want to improve their service to student veterans, including a <a href="http://www.todaysgibill.org/" class="external-link">Toolkit for Veteran-Friendly Institutions</a>
-              </li>
-              <li>American Legion — This national organization’s <a href="http://www.legion.org/education" class="external-link">Veterans Education Center</a> offers a wealth of education-related information and support.
-              </li>
-              <li>
-                <a href="https://www.jedfoundation.org/professionals/programs-and-research/helping-our-student-veterans-succeed" class="external-link">The Jed Foundation</a> — This site offers resources for educators and students who seek to understand and support the emotional health of student veterans.
-              </li>
-              <li>
-                <a href="http://maketheconnection.net/events/students-higher-education" class="external-link">Make the Connection</a> — This site is a platform for shared experiences and also offers support for veterans pursuing postsecondary education.
-              </li>
-              <li>
-                <a href="http://www.operationpromiseforservicemembers.com/" class="external-link">Operation College Promise</a> — This national policy and research organization supports the transition and success of student veterans. It also provides colleges and universities with a comprehensive resource guide: <i><a href="http://operationpromiseforservicemembers.com/OCP-FieldGuide-March2012.pdf" class="external-link">Creating an Environment for Student Veteran Success on Campus</a></i>
-              </li>
-              <li>
-                <a href="http://www.realwarriors.net/" class="external-link">RealWarriors.net</a> — For resources related to educational and vocational counseling and making the transition to academic life.
-              </li>
-              <li>
-                <a href="http://www.studentveterans.org/" class="external-link">Student Veterans of America</a> — This site offers a wealth of resources for student vets and can help them connect with SVA chapters on their campuses.
-              </li>
-              <li>
-                <a href="http://www.gibill.va.gov/" class="external-link">VA GI Bill Website</a> — This government site provides information on all educational benefits provided by the VA. It offers with tools and resources to help Veterans pursuing college degrees, on-the-job training, apprenticeships, or non-college degrees programs.
-              </li>
-              <li class="last">Veterans of Foreign Wars — The VFW recently launched a new initiative called <a href="http://www.vfw.org/News-and-Events/Articles/2013-Articles/VFW,-SVA-Launch-New-Initiative-to-Help-Student-Veterans/" class="external-link">1 Student Veteran</a> aimed at helping student veterans cut through red tape and obtain their VA and GI Bill benefits.
-              </li>
-            </ul>
+            <p id="author">The three stories in this issue of Focus were reported and written by John Pulley, a freelance writer and editor based in Arlington, Va. Pulley, a professional journalist specializing in education issues for more than two decades, is a former staff writer for <i>The Chronicle of Higher Education</i>.<br /><br /></p>
+
           </div>
 
         </div>  <!-- end of article -->

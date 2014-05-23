@@ -1,43 +1,54 @@
 /*
 COLORS
 
-red: #be4340
-navy: #223056
-yellow: #bb9f55
-tan: #e4d9bb
+red: #a3282d
+lime: #c8c15d
+
+Chapter colors:;
+blue: #5a81a0
+green: #72944e
+orange: #d27e41
 ---------------------------------------- */
 
 a, #tttop, #footer a:hover {
-  color: #cc6866;
+  color: #a3282d;
 }
 
-a:hover, h2, h5, #index a:hover, #index .condensed a:hover, #index .active, #index .condensed .active {
-  color: #223056;
+a:hover, h2, #index a:hover, #index .condensed a:hover, #index .active, #index .condensed .active {
+  color: #a3282d;
 }
-
-#masthead, body, .noscript, #footer, .story-end, .figure img, iframe, .thumb {
-  background-color: #be4340;
-}
-
 cite, h3, h4, .pullquote {
   font-style: normal;
 }
 
-h3, h4 {
-  font-family: Stencil, 'Stencil Std', sans-serif;
-  text-transform: uppercase;
+h2, h3, h4 {
+  font-family: "museo-1","museo-2",serif;
 }
 
-h3, .drop-cap { color: #be4340; }
+h3, .drop-cap { color: #a3282d; }
 
 .title {
-  color: #223056;
+  color: #5a81a0;
   line-height: 1em;
   text-align: left;
 }
 
+h3.title {
+  margin-left: -53px;
+  padding: 13px 20px 0 160px;
+  font-size: 21px;
+  color: #000;
+  height: 69px;
+  background-repeat: no-repeat;
+  line-height: 1.2em;
+}
+
+h3.title span {
+  color: #fff;
+  display: block;
+}
+
 h4 {
-  color: #223056;
   padding-top: 2em;
 }
 
@@ -45,12 +56,16 @@ h4 {
   background-color: #eee;
 }
 
+.aside > a {
+  margin-bottom: 0;
+}
+
 .citation {
   border-color: #a48b4a;
 }
 
 .pullquote {
-  background-color: #bb9f55;
+  background-color: #5a81a0;
   color: white;
 }
 
@@ -62,13 +77,34 @@ h4 {
   background: #43685A;
 }
 
+#masthead, body, .noscript, #footer, .story-end, .figure img, iframe, .thumb {
+  background-color: #a3282d;
+}
+
+#cover div {
+  top: auto;
+}
+
+#cover h2 {
+  color: #c8c15d;
+}
+
+#article .section.stripe {
+  border-top: none;
+  border-left: 26px solid #f3f3f4;
+  padding-left: 27px;
+  padding-bottom: .5em;
+  margin-left: -53px;
+  margin-bottom: 4em;
+}
+
 #footer, .noscript, #footer #details, #footer ul li {
   border-color: #9C3734;
 }
 
 #footer {
-  color: #732726;
-  text-shadow: 0 1px 0 #c65553;
+  color: rgba(255,255,255,.8);
+  text-shadow: 0 1px 0 rgba(0,0,0,.4);
 }
 
 .external-link {
@@ -97,6 +133,7 @@ h4 {
   background: #f5f5f5;
 }
 
+.carousel .figure,
 .carousel .figure-audio {
   margin: 0;
 }
@@ -194,7 +231,7 @@ h4 {
 }
 
 #carousel .active {
-  background-color: #be4340;
+  background-color: #a3282d;
   border-color: white;
 }
 
@@ -202,13 +239,156 @@ h4 {
   height: 20px;
 }
 
-#cover div {
-  top: auto;
-  bottom: 202px;
+#two-way-arrows {
+  position: absolute;
+  left: -52px;
+  top: -172px;
+  background: url(../images/arrows_large.png);
+  width: 132px;
+  height: 194px;
 }
-
+ 
 .byline {
   border: none;
   padding: 0 0 1.5em 0;
   margin-bottom: 1.5em;
+}
+
+.cut-corner:before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  border-width:0 0 50px 50px; /* This trick side-steps a webkit bug */
+  border-style:solid;
+  border-color: transparent #fff; /* A bit more verbose to work with .rounded too */
+  background: transparent; /* For when also applying a border-radius */
+  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+}
+
+#extras.section:before,
+h3.title:before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:-26px;
+  border-width:0 0 26px 26px; /* This trick side-steps a webkit bug */
+  border-style:solid;
+  border-color: transparent #fff; /* A bit more verbose to work with .rounded too */
+  background: transparent; /* For when also applying a border-radius */
+  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+}
+
+.section:after {
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:-26px;
+  border-width:0 0 26px 26px; /* This trick side-steps a webkit bug */
+  border-style:solid;
+  border-color: #fff transparent; /* A bit more verbose to work with .rounded too */
+  background: transparent; /* For when also applying a border-radius */
+  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+}
+
+#article .section.blue,
+#article .section.green,
+#article .section.orange {
+  padding-top: 0;
+}
+
+#article .section.blue {
+  border-left-color: #A6C1D2;
+}
+
+#article .section.green {
+  border-left-color: #ABD39F;
+}
+
+#article .section.orange {
+  border-left-color: #E9B378;
+}
+
+.blue .story-end,
+.blue .thumb,
+.blue .pullquote {
+  background-color: #5a81a0;
+}
+
+.blue .drop-cap,
+.blue h4 {
+  color: #5a81a0;
+}
+
+.green .story-end,
+.green .thumb,
+.green .pullquote {
+  background-color: #72944e;
+}
+
+.green .drop-cap,
+.green h4 {
+  color: #72944e;
+}
+
+.orange .story-end,
+.orange .thumb,
+.orange .pullquote {
+  background-color: #d27e41;
+}
+
+.orange .drop-cap,
+.orange h4 {
+  color: #d27e41;
+}
+
+
+.blue h3.title {
+  background-image: url(../images/header_blue.gif);
+}
+
+.green h3.title {
+  background-image: url(../images/header_green.gif);
+}
+
+.orange h3.title {
+  background-image: url(../images/header_orange.gif);
+}
+
+
+
+.section .aside .expandable, .section .aside .collapsable {
+  font-family: "museo-1","museo-2",serif;
+  font-size: 18px;
+}
+
+.section.blue .aside .expandable {
+  background-color: #5a81a0 !important;
+  color: #fff !important;
+  font-family: "museo-1","museo-2",serif;
+}
+.section.blue .aside .collapsable {
+  background-color: #f3f3f4 !important;
+  color: #5a81a0 !important;
+  font-family: "museo-1","museo-2",serif;
+}
+.section.green .aside .expandable {
+  background-color: #72944e !important;
+  color: #fff !important;
+  font-family: "museo-1","museo-2",serif;
+}
+.section.green .aside .collapsable {
+  background-color: #f3f3f4 !important;
+  color: #72944e !important;
+  font-family: "museo-1","museo-2",serif;
+}
+.section.orange .aside .expandable {
+  background-color: #d27e41 !important;
+  color: #fff !important;
+  font-family: "museo-1","museo-2",serif;
+}
+.section.orange .aside .collapsable {
+  background-color: #f3f3f4 !important;
+  color: #d27e41 !important;
+  font-family: "museo-1","museo-2",serif;
 }
